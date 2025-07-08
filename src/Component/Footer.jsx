@@ -50,13 +50,13 @@ const Footer = () => {
                 <div className="contact-info-card contact-mail-info">
                   <p className="box-title">Email Address</p>
                   <h4 className="box-text">
-                    <a href="mailto:help24/7.info@Rentelli Gence.com">
-                      help24/7.info@Rentelli Gence.com
+                    <a href="mailto:help24/7.info@rentelligence.com">
+                      help24/7.info@rentelligence.com
                     </a>
                   </h4>
                   <h4 className="box-text">
-                    <a href="mailto:info@Rentelli Gence.com">
-                      info@Rentelli Gence.com
+                    <a href="mailto:info@rentelligence.com">
+                      info@rentelligence.com
                     </a>
                   </h4>
                 </div>
@@ -102,16 +102,16 @@ const Footer = () => {
                           <a href="/">Home</a>
                         </li>
                         <li>
-                          <a href="/">About Us</a>
+                          <a href="/main">About Us</a>
                         </li>
                         <li>
-                          <a href="/">Features</a>
+                          <a href="/service">Services</a>
                         </li>
                         <li>
-                          <a href="/">Projects</a>
+                          <a href="/Category">Category</a>
                         </li>
                         <li>
-                          <a href="/">Blog</a>
+                          <a href="/Contact">Contact Us</a>
                         </li>
                       </ul>
                     </div>

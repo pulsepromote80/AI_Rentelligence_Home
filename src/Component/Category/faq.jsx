@@ -17,7 +17,7 @@ const Faq = () => {
                 className="sec-title style2 fw-bold text-uppercase text-anim2 text-white"
                 data-aos="slideInUp"
               >
-                Industries Where AI is Optimizing the Processes
+                Industries Where AI is Transforming Processes
               </h2>
             </div>
           </div>
@@ -27,10 +27,10 @@ const Faq = () => {
               data-aos="slideInUp"
             >
               <p>
-                Our AI agency delivers transformative solutions tailored to each
-                industry's needs. Explore how artificial intelligence is
-                revolutionizing sectors through automation, analytics, and
-                personalized services.
+                Our intelligent AI agents deliver specialized solutions tailored to each industry's unique needs.
+                Discover how Rentelligence is revolutionizing these sectors with advanced automation,
+                predictive analytics, and smart decision-making.
+
               </p>
             </div>
           </div>

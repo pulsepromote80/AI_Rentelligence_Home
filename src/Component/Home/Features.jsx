@@ -17,7 +17,7 @@ const Features = () => {
                   className="sec-title text-anim2 text-gradient innovations-taxt aos-init aos-animate"
                   data-aos="fade-left"
                 >
-                  Unlock the Potential <br></br> of Web3 Finance
+                  Future Scope & Industry <br></br>Use Cases
                 </h1>
               </div>
               <div className="col-md d-none d-xl-block">
@@ -28,8 +28,8 @@ const Features = () => {
                   className="sec-title text-anim2 mb-0 chng-clr-fnt"
                   data-aos="fade-right"
                 >
-                  Boost your business operations with Inno’s innovative Web3
-                  platform, combining security, efficiency, and transparency.
+                  Unlock next-gen possibilities across industries with AI agents powered by Web3 and
+                  blockchain.
                 </p>
               </div>
             </div>
@@ -60,10 +60,11 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="card-heading">
-                  <span>Enhanced Asset Protection</span>
+                  <span>Web3 Retail & Customer Service </span>
                 </div>
                 <div className="card-sub-heading">
-                  <span>Advanced security for digital asset protection.</span>
+                  <span>Automate support, boost NFT sales, and manage decentralized stores with AI-driven chatbots
+                    and virtual agents.</span>
                 </div>
               </div>
             </div>
@@ -92,11 +93,12 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="card-heading">
-                  <span>Lower Transaction Costs</span>
+                  <span>Education & Training</span>
                 </div>
                 <div className="card-sub-heading">
                   <span>
-                    Reduce costs by streamlining operational processes.
+                    Deliver personalized learning via AI tutors and metaverse classrooms with decentralized learner
+                    profiles.
                   </span>
                 </div>
               </div>
@@ -126,11 +128,14 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="card-heading">
-                  <span>Fast Transaction Processing</span>
+                  <span>Healthcare & Diagnostics
+                  </span>
                 </div>
                 <div className="card-sub-heading">
                   <span>
-                    Efficient, fast transactions without intermediaries.
+                    Enhance patient care with AI triage bots and scheduling agents using secure, decentralized
+                    health data.
+
                   </span>
                 </div>
               </div>
@@ -161,10 +166,11 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="card-heading">
-                  <span> Global Payment Solutions</span>
+                  <span>Logistics & Supply Chain</span>
                 </div>
                 <div className="card-sub-heading">
-                  <span>Advanced security for digital asset protection.</span>
+                  <span>Use autonomous agents and blockchain for real-time inventory tracking and supply chain
+                    transparency.</span>
                 </div>
               </div>
             </div>
@@ -193,10 +199,11 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="card-heading">
-                  <span>Automated Contract Execution</span>
+                  <span>Education & Training
+                  </span>
                 </div>
                 <div className="card-sub-heading">
-                  <span>Automate transactions through smart contracts.</span>
+                  <span>Personalized learning with AI tutors & metaverse classrooms using decentralized profiles.</span>
                 </div>
               </div>
             </div>
@@ -225,11 +232,11 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="card-heading">
-                  <span>Transparent Operations</span>
+                  <span>Enterprise & DAO Operations</span>
                 </div>
                 <div className="card-sub-heading">
                   <span>
-                    Blockchain guarantees full transaction visibility.
+                    Empower DAOs with predictive insights, treasury automation, and AI-driven strategic support.
                   </span>
                 </div>
               </div>

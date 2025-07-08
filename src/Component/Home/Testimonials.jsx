@@ -61,14 +61,14 @@ const Testimonials = () => {
                     <div className="box-content">
                       <p className="box-text">
                         {index % 2 === 0
-                          ? "“AI is transforming industries by enabling machines to perform tasks that previously required human intervention, such as recognizing speech, analyzing images, making predictions, and even understanding emotions.”"
-                          : "“Stay informed about our upcoming events and campaigns. AI is transforming industries by enabling machines to perform tasks that previously required human intervention, there are plenty of ways to get involved and support.”"}
+                          ? "“Rentelligence has completely transformed how we integrate AI into our DAO operations. Leasing agents for predictive analytics saved us time and boosted our treasury performance significantly!”"
+                          : "“The flexibility to rent AI agents for short-term projects is a game-changer. We scaled our NFT marketplace support almost overnight without massive upfront investment.”"}
                       </p>
                       <h3 className="box-title">
-                        {index % 2 === 0 ? "Michael Lacefield" : "Sophia Jennifer"}
+                        {index % 2 === 0 ? "— Aarav Mehta" : "— Lina Rodriguez,"}
                       </h3>
                       <p className="box-desig">
-                        {index % 2 === 0 ? "Co-founder, XYZ" : "Business Analyst"}
+                        {index % 2 === 0 ? "DAO Strategy Lead" : "Web3 Retail Founder"}
                       </p>
                     </div>
                   </div>

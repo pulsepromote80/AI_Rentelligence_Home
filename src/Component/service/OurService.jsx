@@ -43,15 +43,11 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">AI Development</a>
+                  <a href="/">AI Agent Development</a>
                 </h3>
                 <p className="box-text">
-                  Creating & optimizing models using proprietary or customer
-                  data. AI model tailored to specific business.
+                  Deploy custom decentralized AI agents tailored for Web3 and metaverse use.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -64,15 +60,12 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">Data Analytics</a>
+                  <a href="/">Blockchain Data Analytics
+</a>
                 </h3>
                 <p className="box-text">
-                  Providing insights for time-sensitive decisions. Forecasting
-                  trends, risks, and opportunities.
+                  Turn on-chain data into real-time, predictive business insights.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -85,15 +78,12 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">Machine Learning</a>
+                  <a href="/">Adaptive Machine Learning</a>
                 </h3>
                 <p className="box-text">
-                  Building algorithms tailored to specific needs. Using advanced
-                  techniques to improve accuracy and efficiency.
+                  Create evolving models that boost accuracy across decentralized apps.
+
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -106,15 +96,11 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">AI Consulting Services</a>
+                  <a href="/">AI Strategy & Consulting</a>
                 </h3>
                 <p className="box-text">
-                  Helping businesses identify the most impactful AI
-                  applications. Evaluating a business’s preparedness.
+                  Expert guidance on AI adoption, model selection, and ecosystem alignment.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -127,15 +113,11 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">Automation and Process</a>
+                  <a href="/">Process Automation Agents</a>
                 </h3>
                 <p className="box-text">
-                  Automating repetitive tasks like data entry or invoice
-                  processing. Enhancing customer support.
+                 Automate tasks and workflows with intelligent, cost-saving agents.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -148,15 +130,11 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">Education & Science</a>
+                  <a href="/">AI for Education & Research</a>
                 </h3>
                 <p className="box-text">
-                  Diagnostic tools, patient management systems, and predictive
-                  care. Fraud detection, algorithmic trading,
+                  Use AI tutors and research agents to personalize learning and accelerate discovery.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -169,15 +147,11 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">AI Research</a>
+                  <a href="/">AI-Powered Cybersecurity</a>
                 </h3>
                 <p className="box-text">
-                  Automating repetitive tasks like data entry or invoice
-                  processing. Enhancing efficiency by integrating.
+              Secure systems with AI agents detecting threats, boosting security, ensuring compliance.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-6" data-aos="fade-up">
@@ -188,16 +162,12 @@ const OurService = () => {
                   </div>
                 </div>
                 <h3 className="box-title">
-                  <a href="/">AI in Cybersecurity</a>
+                  <a href="/">AI Innovation Labs
+</a>
                 </h3>
                 <p className="box-text">
-                  Ensuring system integrity through AI-driven oversight. Using
-                  AI to detect anomalies and prevent.
+                 Collaborating with teams to prototype AI and drive innovation in decentralized networks.
                 </p>
-                <a href="/" className="link-btn style4">
-                  Read More
-                  <i className="fas fa-long-arrow-right ms-2"></i>
-                </a>
               </div>
             </div>
           </div>

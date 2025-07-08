@@ -51,24 +51,19 @@ const Section1 = () => {
                     data-aos="slide-left"
                     data-aos-delay="200"
                   >
-                    About Us
+                    About Rentelligence
                   </span>
                   <h2
                     className="sec-title mb-0 text-anim2 text-white"
                     data-aos="slide-left"
                     data-aos-delay="300"
                   >
-                    Leading the Future of Business Innovation with Tailor-Made
-                    AI Solutions
+                    Pioneering the Future of Intelligent Business with Decentralized AI Agents
+
                   </h2>
                   <p className="mt-15" data-aos="slide-up" data-aos-delay="400">
-                    We begin by understanding your business goals, challenges,
-                    and opportunities for AI integration. Our experts assess
-                    your current systems and identify areas where AI can bring
-                    the most impact. Our team designs a tailor-made AI solution
-                    based on your specific requirements. We develop machine
-                    learning models, build algorithms, and create prototypes to
-                    ensure the solution aligns with your business objectives.
+                    At Rentelligence, we go beyond traditional AI solutions. We start by deeply understanding your
+                    operational needs, growth challenges, and digital transformation goals.
                   </p>
                 </div>
 
@@ -90,11 +85,11 @@ const Section1 = () => {
                     </div>
                     <div className="media-body">
                       <h4 className="box-title text-white">
-                        100% Customers Satisfaction
+                        100% Client Satisfaction
                       </h4>
                       <p className="box-text">
-                        We bring a team of experienced AI specialists, data
-                        scientists, and industry experts committed to pushing.
+                        We’re powered by a global team of AI developers, blockchain architects, and data scientists—
+                        all focused on delivering secure, scalable, and smart outcomes for every client.
                       </p>
                     </div>
                   </div>
@@ -120,11 +115,12 @@ const Section1 = () => {
                     </div>
                     <div className="media-body">
                       <h4 className="box-title text-white">
-                        Quality Assurance Guarantee
+                        Quality-Driven Innovation
+
                       </h4>
                       <p className="box-text">
-                        We bring a team of experienced AI specialists, data
-                        scientists, and industry experts committed to pushing.
+                        Every agent is tested, refined, and audited using advanced AI tools and smart contract
+protocols to ensure top-tier performance, transparency, and security.
                       </p>
                     </div>
                   </div>

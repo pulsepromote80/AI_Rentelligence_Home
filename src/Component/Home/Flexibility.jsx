@@ -24,13 +24,13 @@ const Flexibility = () => {
           <div className="col-xxl-8 col-xl-9 col-lg-8 col-md-10">
             <div className="title-area text-center">
               <div className="center-div">
-                <p>Innovative Web3 Solutions</p>
+                <p>Rentelligence</p>
               </div>
               <h2
                 className="sec-title text-anim2 text-gradient innovations-taxt"
                 data-aos="fade-up"
               >
-                Intelligent Innovations: Tailored AI Solutions
+                AI Agent Catalog: Diverse & Specialized AI Solutions
               </h2>
             </div>
           </div>
@@ -113,13 +113,13 @@ const Flexibility = () => {
                 />
               </svg>
 
-              <h1 className="Future-Forward-text">Future-Forward Solutions</h1>
+              <h1 className="Future-Forward-text">Diverse AI Agent Catalog</h1>
               <p className="Future-Forward-text-p">
-                Our Web3 fintech simplifies complex finance for everyone. With
-                innovative technology, we make navigating the financial future
-                easier.
+                Explore a wide range of specialized AI agents—from reactive, deliberative, and hybrid models to
+                conversational, ethical, autonomous, and blockchain-focused solutions like DeFi automation
+                and DAO governance.
               </p>
-              <a href="/" className="th-btn style2">
+              <a href="https://ai-rentelligence.vercel.app/" className="th-btn style2">
                 Get Started <i className="far fa-long-arrow-right ms-2"></i>
               </a>
             </div>
@@ -329,12 +329,12 @@ const Flexibility = () => {
                 <line x1="17" y1="16" x2="23" y2="16" />
               </svg>
 
-              <h1 className="Future-Forward-text">Efficient Smart Contract </h1>
+              <h1 className="Future-Forward-text">Flexible Acquisition Models </h1>
               <p className="Future-Forward-text-p">
-                Our platform ensures your smart contracts are executed
-                seamlessly, optimizing both speed and accuracy.
+                Choose from purchase, lease, rent, or AIaaS to match your budget, timeline, and control
+                needs—scalable and cost-effective.
               </p>
-              <a href="/" className="th-btn style2">
+              <a href="https://ai-rentelligence.vercel.app/" className="th-btn style2">
                 Get Started <i className="far fa-long-arrow-right ms-2"></i>
               </a>
             </div>
@@ -364,14 +364,14 @@ const Flexibility = () => {
               </svg>
 
               <h1 className="Future-Forward-text">
-                Unleash the Potential of Finance
+                Metaverse Integration
               </h1>
               <p className="Future-Forward-text-p">
-                Experience the power of decentralized finance right at your
-                fingertips, transforming the way you manage your assets and
-                engage with the financial world.
+                Deploy, test, and collaborate with AI agents in immersive virtual environments—boost
+                innovation through real-time simulations and co-creation.
+
               </p>
-              <a href="/" className="th-btn style2">
+              <a href="https://ai-rentelligence.vercel.app/" className="th-btn style2">
                 Get Started <i className="far fa-long-arrow-right ms-2"></i>
               </a>
             </div>

@@ -42,7 +42,7 @@ const Consulting = () => {
                   </h2>
 
                   <div className="btn-wrap justify-content-center mt-50">
-                    <a href="/" className="th-btn style-border2">
+                    <a href="https://ai-rentelligence.vercel.app/" className="th-btn style-border2">
                       Get Started Now <i className="far fa-long-arrow-right ms-2"></i>
                     </a>
                   </div>

@@ -51,48 +51,42 @@ const Calculator = () => {
                     className="sec-title style2 fw-bold text-uppercase text-anim2 text-white"
                     data-aos="fade-up"
                   >
-                    Empowering Businesses with Cutting-Edge AI Solutions to
-                    Drive Innovation.
+                   Empowering Businesses with Cutting-Edge AI Agents to Drive Innovation
+
                   </h2>
                   <p data-aos="fade-up" className="text-white-50">
-                    Our AI agency is a cutting-edge technology partner that
-                    specializes in delivering artificial intelligence solutions
-                    to help businesses streamline operations, improve
-                    decision-making, and enhance customer experiences. By
-                    leveraging the power of AI,
+                    At Rentelligence, we don’t just offer technology — we empower your business with intelligent,
+decentralized AI Agents designed to transform how you operate, make decisions, and engage
+with customers.
                   </p>
                 </div>
 
                 <div className="why-feature-wrap3">
                   <div className="why-feature-card" data-aos="fade-up">
-                    <h4 className="box-title text-white">Expertise</h4>
+                    <h4 className="box-title text-white">EXPERTISE</h4>
                     <p className="box-text text-white-50">
-                      Our team has extensive experience in building and
-                      deploying AI solutions across various industries.
+                     We build AI agents for industries, delivering impactful solutions.
                     </p>
                   </div>
 
                   <div className="why-feature-card" data-aos="fade-up">
                     <h4 className="box-title text-white">Customization</h4>
                     <p className="box-text text-white-50">
-                      We offer tailor-made solution designed to address your
-                      unique business challenges. various industries.
+                     We build custom AI agents to solve your challenges and align with your business goals.
                     </p>
                   </div>
 
                   <div className="why-feature-card" data-aos="fade-up">
                     <h4 className="box-title text-white">Innovation</h4>
                     <p className="box-text text-white-50">
-                      We stay ahead of the curve by adopting the latest AI
-                      advancements & technology. various industries.
+                     Stay ahead with evolving AI agents built on the latest in ML, blockchain, and Web3.
                     </p>
                   </div>
 
                   <div className="why-feature-card" data-aos="fade-up">
                     <h4 className="box-title text-white">Scalability</h4>
                     <p className="box-text text-white-50">
-                      Our solutions are designed to grow with your business,
-                      ensuring long-term value. various industries.
+                      Our AI agents scale with your growth, offering flexibility, resilience, and lasting value.
                     </p>
                   </div>
                 </div>

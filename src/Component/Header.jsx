@@ -33,7 +33,7 @@ const Header = () => {
               <li><Link to="/Category">Category</Link> </li>
               <li><Link to="/Contact">Contact Us</Link></li> 
             <li className="d-xl-block d-xl-none">
-            <Link to="/Contact" className="th-btn style2 text-white"> Get Started Now <i className="far fa-long-arrow-right ms-2"></i></Link>
+            <Link to="https://ai-rentelligence.vercel.app/" className="th-btn style2 text-white"> Get Started Now <i className="far fa-long-arrow-right ms-2"></i></Link>
              </li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ const Header = () => {
 
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
-                    <a href="#contact-sec" className="th-btn style2">
+                    <a href="https://ai-rentelligence.vercel.app/" className="th-btn style2">
                       Get Started Now <i className="far fa-long-arrow-right ms-2"></i>
                     </a>
                   </div>
