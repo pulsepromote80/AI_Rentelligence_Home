@@ -50,11 +50,11 @@ const QuickContact = () => {
               </div>
               <h4 className="box-title">Email us</h4>
               <p className="box-text">
-                <a href="mailto:help24/7.info@robor.com">
-                  help24/7.info@robor.com
+                <a href="mailto:help24/7.info@rentelligence.com">
+                  help24/7.info@rentelligence.com
                 </a>
                 <br />
-                <a href="mailto:info@robor.com">info@robor.com</a>
+                <a href="mailto:info@rentelligence.com">info@rentelligence.com</a>
               </p>
             </div>
           </div>

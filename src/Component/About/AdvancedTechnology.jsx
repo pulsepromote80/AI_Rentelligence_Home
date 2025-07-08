@@ -41,7 +41,7 @@ const AdvancedTechnology = () => {
                 Advanced Technology
               </span>
               <h2 className="sec-title fw-bold text-anim2" data-aos="fade-up">
-                The Future is Here: Advance Technology
+                The Future is Here: Advanced AI Solutions
               </h2>
             </div>
 
@@ -51,10 +51,9 @@ const AdvancedTechnology = () => {
                   <div className="box-icon">
                     <img src={Image.featureicon1} alt="icon" />
                   </div>
-                  <h3 className="box-title">Tech support</h3>
+                  <h3 className="box-title">AI Tech Support</h3>
                   <p className="box-text">
-                    To empower businesses with intelligent, scalable, and
-                    impactful solutions that drive progress
+                    Deploy intelligent support agents for 24/7 assistance, automate ticket handling, and enhance customer satisfaction on Web3 platforms.
                   </p>
                 </div>
               </div>
@@ -64,10 +63,11 @@ const AdvancedTechnology = () => {
                   <div className="box-icon">
                     <img src={Image.featureicon2} alt="icon" />
                   </div>
-                  <h3 className="box-title">Robo Genius</h3>
+                  <h3 className="box-title">Robo Genius Agents</h3>
                   <p className="box-text">
-                    To empower businesses with intelligent, scalable, and
-                    impactful solutions that drive progress
+                    Leverage smart AI agents with advanced reasoning and decision-making skills—perfect for DeFi
+                    analytics, DAO strategy, and metaverse interaction.
+
                   </p>
                 </div>
               </div>
@@ -77,10 +77,10 @@ const AdvancedTechnology = () => {
                   <div className="box-icon">
                     <img src={Image.featureicon2} alt="icon" />
                   </div>
-                  <h3 className="box-title">Image Generation</h3>
+                  <h3 className="box-title">AI Image Generation</h3>
                   <p className="box-text">
-                    To empower businesses with intelligent, scalable, and
-                    impactful solutions that drive progress
+                    Transform ideas into visuals with AI-powered image generators that support content creation,
+                    NFT art, and marketing design.
                   </p>
                 </div>
               </div>
@@ -90,10 +90,9 @@ const AdvancedTechnology = () => {
                   <div className="box-icon">
                     <img src={Image.featureicon4} alt="icon" />
                   </div>
-                  <h3 className="box-title">Chatbots</h3>
+                  <h3 className="box-title">Conversational Chatbots</h3>
                   <p className="box-text">
-                    To empower businesses with intelligent, scalable, and
-                    impactful solutions that drive progress
+                   Rent AI-driven chatbots for customer interaction, lead generation, and support across digital storefronts and dApps.
                   </p>
                 </div>
               </div>

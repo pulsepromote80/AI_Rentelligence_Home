@@ -35,12 +35,13 @@ const Sectionfive = () => {
                   data-aos="fade-up"
                 >
                   Our Services
+
                 </span>
                 <h2
                   className="sec-title style2 text-anim2 text-white"
                   data-aos="fade-up"
                 >
-                  AI Technology Services Aim To Provide Intelligent Solutions.
+                  Explore, Rent, and Deploy Powerful AI Agents for Every Use Case
                 </h2>
               </div>
             </div>
@@ -50,9 +51,8 @@ const Sectionfive = () => {
               <div className="service-list-wrap" data-aos="fade-up">
                 {serviceData.map((item, index) => (
                   <div
-                    className={`service-card2 hover-item ${
-                      hovered === index ? "item-active" : ""
-                    }`}
+                    className={`service-card2 hover-item ${hovered === index ? "item-active" : ""
+                      }`}
                     key={item.id}
                     onMouseEnter={() => setHovered(index)}
                     onMouseLeave={() => setHovered(null)}
@@ -109,38 +109,34 @@ const Sectionthree = () => {
                     className="sub-title2 mb-30 text-anim text-white"
                     data-aos="fade-Up"
                   >
-                    About Us
+                    About Rentelligence
+
                   </span>
                   <h2
                     className="sec-title style2 text-anim2 text-white"
                     data-aos="fade-Up"
                   >
-                    Empower Your Business With Real-Time Intelligence
+                    Shaping the future with decentralized AI agents.
                   </h2>
                 </div>
                 <p className="sec-text text-gray3 mb-25" aos-cue="fade-Up">
-                  Artificial Intelligence (AI) technology refers to the
-                  simulation of human intelligence in machines that are
-                  programmed to think, learn, and make decisions. AI technology
-                  leverages data, algorithms, and computing power to automate
-                  tasks.
+                  At Rentelligence, we envision a future where intelligent agents seamlessly power every aspect
+of life and business — from automating DeFi strategies to transforming healthcare and
+agriculture.
                 </p>
                 <div className="checklist style4" data-aos="fade-Up">
                   <ul>
                     <li>
                       <img src={Image.checkicon1} alt="img" />
-                      Advanced Artificial Intelligence Capabilities for Enhanced
-                      Efficiency.
+                     Decentralized & community-led AI ecosystem
                     </li>
                     <li>
                       <img src={Image.checkicon1} alt="img" />
-                      Real-time Data Analysis and Monitoring for Optimized
-                      Performance.
+                     Scalable solutions for Web3, enterprises, and DAOs
                     </li>
                     <li>
                       <img src={Image.checkicon1} alt="img" />
-                      Collaborative and Autonomous Robots for Seamless
-                      Integration
+                     Transparent, secure, and future-ready agent marketplace
                     </li>
                   </ul>
                 </div>
@@ -241,22 +237,23 @@ const Wapper = () => {
               <div className="col-xl-9 col-lg-10">
                 <div className="hero-style2 text-center">
                   <div className="center-div">
-                    <p>Innovative Web3 Solutions</p>
+                    <p>Rentelligence</p>
                   </div>
                   <h1
                     className="hero-title text-white"
                     data-aos="fade-up"
                     data-aos-delay="100"
                   >
-                    AI Agent Categories with Examples, Solutions, and Products
+                    Empowering the Future with AI Agents — Rent, Lease, Own, and Evolve
                   </h1>
                   <p
                     className="hero-text"
                     data-aos="fade-up"
                     data-aos-delay="300"
                   >
-                    Experience the future of finance with our innovative Web3
-                    fintech startup.
+                    Rentelligence is the world’s first decentralized AI/ML marketplace where intelligent agents can
+                    be purchased, leased, or rented — unlocking limitless possibilities across industries,
+                    metaverse, and Web3 ecosystems.
                   </p>
                   <div
                     className="btn-wrap justify-content-center"
@@ -265,10 +262,6 @@ const Wapper = () => {
                   >
                     <a href="https://ai-rentelligence.vercel.app/" className="th-btn style2">
                       Get Started{" "}
-                      <i className="far fa-long-arrow-right ms-2"></i>
-                    </a>
-                    <a href="/" className="th-btn style-border2">
-                      Discover More{" "}
                       <i className="far fa-long-arrow-right ms-2"></i>
                     </a>
                   </div>

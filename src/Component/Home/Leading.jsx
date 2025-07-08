@@ -27,16 +27,17 @@ const Leading = () => {
                     className="sec-title style2 text-anim2 text-white"
                     data-aos="fade-up"
                   >
-                    Discover The Future of AI Innovation
+                    Discover the Future of AI Innovation
                   </h2>
                 </div>
 
                 <div className="why-card-wrap2">
                   <div className="why-card" data-aos="fade-up">
                     <div className="box-details">
-                      <h4 className="box-title">Vision AI Technology</h4>
+                      <h4 className="box-title">Visionary AI Technology</h4>
                       <p className="box-text">
-                        Our Technology AI Generator website empowers individuals
+                        Empowering businesses and individuals to unlock limitless potential with intelligent,
+                        decentralized agents.
                       </p>
                     </div>
                   </div>
@@ -45,16 +46,17 @@ const Leading = () => {
                     <div className="box-details">
                       <h4 className="box-title">AI for Everyone</h4>
                       <p className="box-text">
-                        Our Technology AI Generator website empowers individuals
+                        Making advanced AI accessible, flexible, and customizable for every user and every
+                        industry
                       </p>
                     </div>
                   </div>
 
                   <div className="why-card" data-aos="fade-up">
                     <div className="box-details">
-                      <h4 className="box-title">Mission AI Technology</h4>
+                      <h4 className="box-title">Mission-Driven AI Solutions</h4>
                       <p className="box-text">
-                        Our Technology AI Generator website empowers individuals
+                        Transforming ideas into intelligent realities through secure, scalable, and blockchainpowered AI systems.
                       </p>
                     </div>
                   </div>
@@ -90,13 +92,12 @@ const Leading = () => {
                   </div>
                   <div className="why-counter-content">
                     <h4 className="box-title text-white">
-                      Innovate Faster with Our AI Generator Platform
+                      Innovate Faster with Our Agent AI Marketplace
                     </h4>
                     <p className="box-text text-gray3">
-                      From generating complex algorithms to simple AI-driven
-                      tools, we offer cutting-edge solutions. Enables machines
-                      to interpret and analyze visual data such as images,
-                      videos, and real-world objects.
+                      From advanced autonomous agents to real-time adaptive tools, Rentelligence delivers cuttingedge, decentralized AI solutions. Our platform enables you to integrate AI seamlessly, automate
+                      complex processes, and create intelligent experiences across Web3, metaverse, and real-world
+                      applications.
                     </p>
                   </div>
                   <div className="why-counter-card">
@@ -104,7 +105,7 @@ const Leading = () => {
                       {inView ? (
                         <CountUp
                           start={0}
-                          end={24}
+                          end={25}
                           duration={5}
                           delay={0}
                           className="counter-number"
@@ -115,7 +116,7 @@ const Leading = () => {
                       <span className="counter-marker">+</span>
                     </h2>
                     <h4 className="counter-text text-white">
-                      Digital Experience
+                      AI expertise.
                     </h4>
                   </div>
                 </div>

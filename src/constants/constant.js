@@ -7,9 +7,9 @@ export const industryData = [
     image: Image.featurethumbshape2,
     thumbShape: Image.featurethumbshape1,
     desc1:
-      "AI for diagnostics, personalized treatment, and patient care optimization in healthcare.",
+      "AI agents for diagnostics, personalized treatment, and automated patient management.",
     desc2:
-      "Enhancing decision-making and automating administrative tasks for better outcomes.",
+      "Enhancing decision-making, improving outcomes, and optimizing operational workflows.",
   },
   {
     id: 2,
@@ -17,8 +17,8 @@ export const industryData = [
     image: Image.featurethumbshape3,
     thumbShape: Image.featurethumbshape1,
     desc1:
-      "AI in finance offers fraud detection, predictive analytics, and portfolio management.",
-    desc2: "Automates financial operations and customer service with chatbots.",
+      "Smart agents for fraud detection, algorithmic trading, risk assessment, and compliance automation.",
+    desc2: "Empowering secure, real-time financial intelligence.",
   },
   {
     id: 3,
@@ -26,8 +26,8 @@ export const industryData = [
     image: Image.featurethumbshape4,
     thumbShape: Image.featurethumbshape1,
     desc1:
-      "Adaptive learning, personalized tutoring, and performance tracking using AI in education.",
-    desc2: "Improves access, engagement, and outcomes across learning systems.",
+      "Adaptive learning agents and intelligent tutors for personalized education, automated assessments, and immersive metaverse classrooms.",
+    desc2: "",
   },
   {
     id: 4,
@@ -35,26 +35,26 @@ export const industryData = [
     image: Image.featurethumbshape5,
     thumbShape: Image.featurethumbshape1,
     desc1:
-      "Smart factories powered by AI increase efficiency, reduce downtime, and predict failures.",
-    desc2: "AI enhances quality control and supply chain optimization.",
+      "AI-driven robotics and predictive maintenance agents for optimized production, quality control, and supply chain automation.",
+    desc2: "",
   },
   {
     id: 5,
-    title: "Fintech AI",
+    title: "FinTech AI",
     image: Image.featurethumbshape6,
     thumbShape: Image.featurethumbshape1,
     desc1:
-      "Fintech uses AI for fraud detection, credit scoring, and personalized financial products.",
-    desc2: "Drives customer insights and innovation in digital finance.",
+      "Decentralized AI agents for crypto trading, DeFi analytics, smart treasury management, and cross-chain compliance.",
+    desc2: "",
   },
   {
     id: 6,
-    title: "E-commerce AI",
+    title: "E-Commerce AI",
     image: Image.featurethumbshape7,
     thumbShape: Image.featurethumbshape1,
     desc1:
-      "AI transforms online shopping via recommendation engines, chatbots, and inventory insights.",
-    desc2: "Boosts user engagement, sales conversion, and customer support.",
+      "Conversational agents and recommendation engines that personalize shopping experiences, optimize sales funnels, and automate customer support.",
+    desc2: "",
   },
 ];
 
@@ -77,7 +77,7 @@ export const allCards = [
     downloads: "18,234",
     image:
       "https://png.pngtree.com/recommend-works/png-clipart/20240720/ourmid/pngtree-3d-robot-chatbot-ai-servers-technology-png-image_13158549.png",
-    description: "Sleek metallic surfaces in shades of purple.",
+    description: "Fast-responding agents designed for immediate reactions and real-time decision-making in dynamic environments.",
   },
   {
     id: 2,
@@ -85,7 +85,7 @@ export const allCards = [
     downloads: "15,987",
     image:
       "https://png.pngtree.com/png-clipart/20230615/ourmid/pngtree-3d-robot-and-lock-cyber-security-concept-png-image_7143602.png",
-    description: "3D dreamy looks, colorful flowers and spheres.",
+    description: "Fast-responding agents designed for immediate reactions and real-time decision-making in dynamic environments.",
   },
   {
     id: 1,
@@ -93,7 +93,7 @@ export const allCards = [
     downloads: "18,234",
     image:
       "https://png.pngtree.com/recommend-works/png-clipart/20240920/ourmid/pngtree-3d-robot-machine-learning-ai-in-science-and-business-png-image_13878879.png",
-    description: "Sleek metallic surfaces in shades of purple.",
+    description: "Fast-responding agents designed for immediate reactions and real-time decision-making in dynamic environments.",
   },
   {
     id: 2,
@@ -101,7 +101,7 @@ export const allCards = [
     downloads: "15,987",
     image:
       "https://png.pngtree.com/png-vector/20240731/ourmid/pngtree-d-robot-companion-smart-ai-toy-in-black-and-white-on-png-image_13310289.png",
-    description: "3D dreamy looks, colorful flowers and spheres.",
+    description: "Fast-responding agents designed for immediate reactions and real-time decision-making in dynamic environments.",
   },
 
   {
@@ -110,7 +110,7 @@ export const allCards = [
     downloads: "12,000",
     image:
       "https://png.pngtree.com/png-vector/20250520/ourmid/pngtree-cute-3d-robot-character-with-glowing-eyes-and-small-arms-colorful-png-image_16335592.png",
-    description: "Beautiful natural scenery with trees and sunlight.",
+    description: "Strategic thinkers that analyze data, plan actions, and execute tasks with precision and foresight.",
   },
   {
     id: 4,
@@ -118,7 +118,7 @@ export const allCards = [
     downloads: "25,000",
     image:
       "https://png.pngtree.com/png-vector/20240325/ourmid/pngtree-3d-robot-character-with-headphones-png-image_12239709.png",
-    description: "Dynamic live photo of nature in motion.",
+    description: "Combining reactive speed with deliberative planning to offer a balanced, adaptive AI solution for complex tasks.",
   },
   {
     id: 5,
@@ -126,7 +126,7 @@ export const allCards = [
     downloads: "9,876",
     image:
       "https://png.pngtree.com/png-vector/20241020/ourmid/pngtree-futuristic-3d-robot-figure-png-image_14131077.png",
-    description: "Soft pink fantasy clouds and gradients.",
+    description: "Continuously evolving through experience and new data, improving performance and outcomes over time.",
   },
   {
     id: 6,
@@ -134,7 +134,7 @@ export const allCards = [
     downloads: "8,765",
     image:
       "https://png.pngtree.com/png-vector/20241105/ourmid/pngtree-3d-robots-png-image_14286354.png",
-    description: "Dark theme with shadows and highlights.",
+    description: "Independent agents capable of making high-level decisions, operating seamlessly with minimal human intervention.",
   },
   {
     id: 7,
@@ -142,7 +142,7 @@ export const allCards = [
     downloads: "11,111",
     image:
       "https://png.pngtree.com/png-vector/20240802/ourmid/pngtree-3d-robot-tin-toy-design-pattern-isolated-onthe-transparent-background-png-image_13333742.png",
-    description: "Futuristic robot design in chrome and neon.",
+    description: "Coordinated groups of agents working together to solve distributed problems and manage large-scale tasks",
   },
   {
     id: 8,
@@ -150,7 +150,7 @@ export const allCards = [
     downloads: "22,222",
     image:
       "https://png.pngtree.com/png-vector/20240802/ourmid/pngtree-3d-robot-tin-toy-design-pattern-isolated-onthe-transparent-background-png-image_13333742.png",
-    description: "Cute animal portrait with natural background.",
+    description: "AI-driven virtual assistants and chatbots designed to handle natural language interactions and improve user engagement.",
   },
   {
     id: 9,
@@ -158,7 +158,7 @@ export const allCards = [
     downloads: "13,131",
     image:
       "https://png.pngtree.com/png-clipart/20230907/ourmid/pngtree-d-robot-chatbot-ai-in-science-and-business-technology-engineering-concept-png-image_10021336.png",
-    description: "Dreamy glowing shapes in a surreal environment.",
+    description: "Agents developed with embedded ethical guidelines and aligned with human values to ensure responsible AI deployment.",
   },
   {
     id: 10,
@@ -166,7 +166,7 @@ export const allCards = [
     downloads: "7,000",
     image:
       "https://png.pngtree.com/png-vector/20240921/ourmid/pngtree-3d-robot-in-suit-and-tie-on-transparent-background-png-image_13885514.png",
-    description: "Stack of fantasy books glowing in the dark.",
+    description: "Specialized agents equipped with domain expertise to deliver high-accuracy solutions for specific use cases.",
   },
 ];
 
@@ -194,25 +194,25 @@ export const serviceData = [
   {
     id: 1,
     img: Image.servicecard1,
-    title: "AI Consulting Services",
-    desc: "Identify and mitigate potential security threats in real-time.",
+    title: "AI Agent Discovery",
+    desc: "Browse and compare a wide range of specialized AI agents tailored for Web3, enterprise, and real- world use cases.",
   },
-  {
-    id: 2,
+{
+  id: 2,
     img: Image.servicecard2,
-    title: "Machine Learning",
-    desc: "Develop and deploy models tailored to specific business needs.",
+      title: "Lease & Rent AI Agents",
+        desc: "Flexibly lease or rent AI agents for short-term or task-specific needs—pay only for what you use.",
   },
-  {
-    id: 3,
+{
+  id: 3,
     img: Image.servicecard3,
-    title: "Robotic Process Automation",
-    desc: "Automate repetitive tasks such as data entry, invoice processing, and report generation.",
+      title: "AI-as-a-Service (AIaaS)",
+        desc: "Access powerful AI agents via decentralized cloud infrastructure with seamless, usage-based billing.",
   },
-  {
-    id: 4,
+{
+  id: 4,
     img: Image.servicecard4,
-    title: "AI in Cybersecurity",
-    desc: "Identify and mitigate potential security threats in real-time.",
+      title: "Custom AI Solutions",
+        desc: "Collaborate with expert developers to build, deploy, or fine-tune AI agents designed for your unique business goals.",
   },
 ];

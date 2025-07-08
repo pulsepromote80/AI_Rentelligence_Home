@@ -32,16 +32,14 @@ const Team = () => {
             <div className="col-xl-6">
               <div className="team-wrap1" data-aos="fade-left">
                 <p className="text-gray3">
-                  Artificial Intelligence (AI) technology refers to the
-                  simulation of human intelligence in machines that are
-                  programmed to think, learn, and make decisions. AI technology
-                  leverages data, algorithms, and computing power to automate
-                  tasks, optimize processes, and provide insights that improve
-                  business performance and enhance user experiences.
+                  At Rentelligence, our team of AI pioneers, blockchain engineers, and Web3 innovators is
+dedicated to pushing the boundaries of intelligent automation. Combining deep technical
+expertise with a passion for decentralized innovation, our experts design, develop, and optimize
+advanced AI agents that empower businesses and communities worldwide.
                 </p>
                 <p className="text-gray3 mb-0">
-                  AI is transforming industries by enabling machines to perform
-                  tasks that previously required human intervention,
+                  Driven by innovation. United by intelligence. Focused on your success.
+
                 </p>
               </div>
             </div>
