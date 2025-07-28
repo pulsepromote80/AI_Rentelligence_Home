@@ -8,7 +8,7 @@ const Features = () => {
   }, []);
   return (
     <>
-      <section className=" overflow-hidden bg-grnt1" data-aos="fade-up">
+      <section className=" overflow-hidden bg-grnt1" data-aos="fade-up" id="futurescope">
         <div className="container">
           <div className="title-area text-xl-start text-center">
             <div className="row justify-content-between align-items-center">

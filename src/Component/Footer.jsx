@@ -31,8 +31,7 @@ const Footer = () => {
                 <div className="contact-info-card contact-location-info">
                   <p className="box-title">Location</p>
                   <h4 className="box-text">
-                    56 Moo 9 Ladlumkaew-Pathumthani Rd., Pathum Thani 12140,
-                    Thailand
+                   44 Whitfield Road, London, England, E6 1AS
                   </h4>
                 </div>
               </div>
@@ -72,19 +71,21 @@ const Footer = () => {
                     <div className="th-widget-contact">
                       <h3 className="widget_title">Get In Touch</h3>
                       <p className="footer-text mb-4">
-                        56 Moo 9 Ladlumkaew-Pathumthani Rd., Pathum Thani 12140,
-                        Thailand We suggest connecting apps
+                        44 Whitfield Road, London, England, E6 1AS
                       </p>
                       <div className="th-social style10">
-                        <a href="/">
+                        <a href="https://www.facebook.com/sharer.php?" target="_blank">
                           <i className="fab fa-facebook-f"></i>
                         </a>
-                        <a href="/">
+                        <a href="http://twitter.com/intent/tweet/?text=Hello" target="_blank">
                           <i className="fab fa-twitter"></i>
                         </a>
-                        <a href="/">
-                          <i className="fab fa-youtube"></i>
+                         <a href="https://telegram.me/share/url?" target="_blank">
+                          <i class="fa-brands fa-telegram"></i>
                         </a>
+                        {/* <a href="/">
+                          <i className="fab fa-youtube"></i>
+                        </a> */}
                         <a href="/">
                           <i className="fab fa-linkedin-in"></i>
                         </a>
@@ -124,19 +125,19 @@ const Footer = () => {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="/">What we Offer</a>
+                          <a href="/main">What we Offer</a>
                         </li>
                         <li>
-                          <a href="/">Our Story</a>
+                          <a href="#futurescope">Future Scope</a>
                         </li>
                         <li>
-                          <a href="/">Latest Posts</a>
+                          <a href="#blog-sec">Latest Posts</a>
                         </li>
                         <li>
-                          <a href="/">Help Center</a>
+                          <a href="#ourclient">Our Clients</a>
                         </li>
                         <li>
-                          <a href="/">Our Partners</a>
+                          <a href="#ourprofessionals">Our Professionals</a>
                         </li>
                       </ul>
                     </div>
@@ -149,19 +150,19 @@ const Footer = () => {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="/">Robotic Automation</a>
+                          <a href="/service">Robotic Automation</a>
                         </li>
                         <li>
-                          <a href="/">Education & Science</a>
+                          <a href="/service">Education & Science</a>
                         </li>
                         <li>
-                          <a href="/">Machine Learning</a>
+                          <a href="/service">Machine Learning</a>
                         </li>
                         <li>
-                          <a href="/">Predictive Analysis</a>
+                          <a href="/service">Predictive Analysis</a>
                         </li>
                         <li>
-                          <a href="/">Data Security</a>
+                          <a href="/service">Data Security</a>
                         </li>
                       </ul>
                     </div>
@@ -188,13 +189,13 @@ const Footer = () => {
                 <div className="footer-links">
                   <ul>
                     <li>
-                      <a href="/">Privacy Policy</a>
+                      <a href="/Privacypolicy">Privacy Policy</a>
                     </li>
                     <li>
                       <a href="/">Contact</a>
                     </li>
                     <li>
-                      <a href="/">Terms and Conditions.</a>
+                      <a href="/TermsCondition">Terms and Conditions.</a>
                     </li>
                   </ul>
                 </div>

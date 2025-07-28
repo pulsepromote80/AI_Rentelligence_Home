@@ -11,6 +11,8 @@ import Main from "./Component/About/Main";
 import Contact from "./Component/Contact/Contact";
 import Service from "./Component/service/Service";
 import Category from "./Component/Category/Category";
+import PrivacyPolicy from "./Component/PrivacyPolicy/PrivacyPolicy";
+import TermsCondition from "./Component/TermsAndCondition/TermsCondition";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
           <Route path="/Category" element={<Category />} />
+          <Route path="/Privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/TermsCondition" element={<TermsCondition />} />
         </Routes>
         <Footer />
       </body>
