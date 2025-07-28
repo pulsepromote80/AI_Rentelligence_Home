@@ -9,7 +9,7 @@ import Image from "../../Component/Image";
 
 const Testimonials = () => {
   return (
-    <section className="testi-area-2 space-top overflow-hidden">
+    <section className="testi-area-2 space-top overflow-hidden" id="ourclient">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xxl-7 col-xl-8">

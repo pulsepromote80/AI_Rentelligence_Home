@@ -3,7 +3,7 @@ import Image from "../../Component/Image";
 const Team = () => {
   return (
     <>
-      <section className="space overflow-hidden team-area-1">
+      <section className="space overflow-hidden team-area-1" id="ourprofessionals">
         <div className="container">
           <div className="title-area text-xl-start text-center">
             <div className="row justify-content-center align-items-center">

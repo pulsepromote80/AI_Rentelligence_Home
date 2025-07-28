@@ -38,7 +38,7 @@ const QuickContact = () => {
               </div>
               <h4 className="box-title">Location</h4>
               <p className="box-text">
-                Aai Saheb Housing Society, Sawant Bangla, 412308, Pakistan
+                44 Whitfield Road, London, England, E6 1AS
               </p>
             </div>
           </div>
