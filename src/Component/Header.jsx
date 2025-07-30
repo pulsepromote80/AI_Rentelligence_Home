@@ -27,11 +27,11 @@ const Header = () => {
           </div>
           <div className="th-mobile-menu">
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/main">About Us</Link></li>
-              <li><Link to="/service">Services</Link></li>  
-              <li><Link to="/Category">Category</Link> </li>
-              <li><Link to="/Contact">Contact Us</Link></li> 
+              <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+              <li><Link to="/main" onClick={closeMenu}>About Us</Link></li>
+              <li><Link to="/service" onClick={closeMenu}>Services</Link></li>  
+              <li><Link to="/Category" onClick={closeMenu}>Category</Link> </li>
+              <li><Link to="/Contact" onClick={closeMenu}>Contact Us</Link></li> 
             <li className="d-xl-block d-xl-none">
             <Link to="https://rentelligence.biz/" className="th-btn style2 text-white"> Get Started Now <i className="far fa-long-arrow-right ms-2"></i></Link>
              </li>
