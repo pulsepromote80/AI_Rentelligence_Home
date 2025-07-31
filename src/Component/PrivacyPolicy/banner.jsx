@@ -19,7 +19,7 @@ const Banner = () => {
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  Privacy & Policy
+                  Privacy Policy
                 </h1>
                 <ul
                   className="breadcumb-menu"
@@ -29,7 +29,7 @@ const Banner = () => {
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>Privacy & Policy </li>
+                  <li>Privacy Policy </li>
                 </ul>
               </div>
             </div>

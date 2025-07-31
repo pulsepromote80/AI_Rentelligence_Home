@@ -23,10 +23,10 @@ const Footer = () => {
 
         <div className="container">
           <div className="footer-top">
-            <div className="shadow-text text-lg-center" data-aos="slide-up">
+            <div className="shadow-text text-lg-center" data-aos="slide-up" >
               Let’s Talk
             </div>
-            <div className="row gy-30 justify-content-lg-around">
+            <div className="row gy-30 justify-content-lg-around  " style={{marginTop:"10px"}}>
               <div className="col-lg-auto" data-aos="slide-up">
                 <div className="contact-info-card contact-location-info">
                   <p className="box-title">Location</p>
@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="contact-info-card contact-phone-info">
                   <p className="box-title">Phone Call</p>
                   <h4 className="box-text">
-                    <a href="tel:6624073460">+6624073460</a>
+                    <a href="tel:7123 45XXXX">+44 7123 45XXXX</a>
                   </h4>
                 </div>
               </div>
@@ -50,14 +50,14 @@ const Footer = () => {
                   <p className="box-title">Email Address</p>
                   <h4 className="box-text">
                     <a href="mailto:help24/7.info@rentelligence.com">
-                      help24/7.info@rentelligence.com
+                      info@rentelligence.ai
                     </a>
                   </h4>
-                  <h4 className="box-text">
+                  {/* <h4 className="box-text">
                     <a href="mailto:info@rentelligence.com">
                       info@rentelligence.com
                     </a>
-                  </h4>
+                  </h4> */}
                 </div>
               </div>
             </div>
@@ -74,19 +74,19 @@ const Footer = () => {
                         44 Whitfield Road, London, England, E6 1AS
                       </p>
                       <div className="th-social style10">
-                        <a href="https://www.facebook.com/sharer.php?" target="_blank">
+                        <a href="#" target="_blank">
                           <i className="fab fa-facebook-f"></i>
                         </a>
-                        <a href="http://twitter.com/intent/tweet/?text=Hello" target="_blank">
+                        <a href="#" target="_blank">
                           <i className="fab fa-twitter"></i>
                         </a>
-                         <a href="https://telegram.me/share/url?" target="_blank">
+                         <a href="#" target="_blank">
                           <i class="fa-brands fa-telegram"></i>
                         </a>
                         {/* <a href="/">
                           <i className="fab fa-youtube"></i>
                         </a> */}
-                        <a href="/">
+                        <a href="#">
                           <i className="fab fa-linkedin-in"></i>
                         </a>
                       </div>
@@ -125,19 +125,19 @@ const Footer = () => {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="/main">What we Offer</a>
+                          <a href="#why-choose-us">Why Choose Us</a>
                         </li>
                         <li>
                           <a href="#futurescope">Future Scope</a>
                         </li>
                         <li>
-                          <a href="#blog-sec">Latest Posts</a>
+                          <a href="#ourprofessionals">Our Team</a>
                         </li>
                         <li>
-                          <a href="#ourclient">Our Clients</a>
+                          <a href="#contact-sec"> Certificate</a>
                         </li>
                         <li>
-                          <a href="#ourprofessionals">Our Professionals</a>
+                          <a href="#ourclient">Testimonials</a>
                         </li>
                       </ul>
                     </div>
@@ -150,19 +150,19 @@ const Footer = () => {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="/service">Robotic Automation</a>
+                          <a href="#service-sec">AI Agent Development</a>
                         </li>
                         <li>
-                          <a href="/service">Education & Science</a>
+                          <a href="#service-sec">Blockchain Data Analytics</a>
                         </li>
                         <li>
-                          <a href="/service">Machine Learning</a>
+                          <a href="#service-sec">Adaptive Machine Learning</a>
                         </li>
                         <li>
-                          <a href="/service">Predictive Analysis</a>
+                          <a href="#service-sec">AI Strategy & Consulting</a>
                         </li>
                         <li>
-                          <a href="/service">Data Security</a>
+                          <a href="#service-sec">Process Automation Agents</a>
                         </li>
                       </ul>
                     </div>
@@ -178,8 +178,7 @@ const Footer = () => {
             <div className="row gy-2">
               <div className="col-lg-6" data-aos="slide-up">
                 <p className="copyright-text">
-                  Copyright 2025 <a href="/">Rentelli Gence.</a> All Rights
-                  Reserved.
+                  © 2025<a href="https://rentelligence.ai/"> Rentelligence.</a> All rights reserved.
                 </p>
               </div>
               <div
@@ -192,7 +191,7 @@ const Footer = () => {
                       <a href="/Privacypolicy">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="/">Contact</a>
+                      <a href="/Contact">Contact</a>
                     </li>
                     <li>
                       <a href="/TermsCondition">Terms and Conditions.</a>

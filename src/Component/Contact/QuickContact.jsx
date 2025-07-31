@@ -50,11 +50,8 @@ const QuickContact = () => {
               </div>
               <h4 className="box-title">Email us</h4>
               <p className="box-text">
-                <a href="mailto:help24/7.info@rentelligence.com">
-                  help24/7.info@rentelligence.com
-                </a>
-                <br />
-                <a href="mailto:info@rentelligence.com">info@rentelligence.com</a>
+                
+                <a href="mailto:info@rentelligence.ai">info@rentelligence.ai</a>
               </p>
             </div>
           </div>
@@ -66,9 +63,8 @@ const QuickContact = () => {
               </div>
               <h4 className="box-title">Free Call</h4>
               <p className="box-text">
-                <a href="tel:+919175513663">+919 (175) 513 663</a>
-                <br />
-                <a href="tel:+919175513773">+919 (175) 513 773</a>
+               
+                <a href="tel:+919175513773">+44 7123 45XXXX</a>
               </p>
             </div>
           </div>

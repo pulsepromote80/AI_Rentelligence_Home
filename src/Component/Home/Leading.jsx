@@ -74,8 +74,8 @@ const Leading = () => {
                       </defs>
                       <text>
                         <textPath href="#circlePath" startOffset="0%">
-                          Rentelli Gence- AI AND AUTOMATION INTEGRATION •
-                          Rentelli Gence- AI AND AUTOMATION INTEGRATION •
+                          RentelliGence- AI AND AUTOMATION •
+                         •
                         </textPath>
                       </text>
                     </svg>
