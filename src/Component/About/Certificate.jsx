@@ -19,20 +19,23 @@ const Certificate = () => {
         <div className="container">
           <div className="consulting-wrap1 bg-smoke">
             <div className="row align-items-center">
-              <div className="col-xxl-6">
+             
+              <div className="col-md-6 col-sm-12">
                 <div className="page-img mb-0">
-                  <iframe
+                  {/* <iframe
                     src={Image.PDF}
                     title="Certificate PDF"
                     width="100%"
                     height="800px"
                     style={{ border: "none" }}
-                  ></iframe>
+                  ></iframe> */}
+                  <img src="/cirtificate.jpg"/>
                 </div>
               </div>
-              <div className="col-xxl-6">
+              <div className="col-md-6 col-sm-12">
                 <div className="consulting-form-wrap1">
-                  <p className="mt-15 aos-init aos-animate">
+                   <h3 class="certificate ">CERTIFICATE OF INCORPORATION</h3>
+                  <p className="mt-15 aos-init aos-animate text-justify " >
                     Incorporated on 17th June 2025, Rentelligence Limited is a
                     privately held company registered in England and Wales
                     (Company Number: 16522288). Formed under the Companies Act

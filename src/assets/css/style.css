@@ -4978,7 +4978,7 @@
  }
 
  .bg-smoke {
-     background-color: var(--smoke-color) !important
+     background-color: #dddddd !important;
  }
 
  .bg-smoke2 {
@@ -10723,8 +10723,7 @@
  }
 
  .widget-area {
-     padding-top: 120px;
-     padding-bottom: 70px
+     padding-top: 70px;
  }
 
  .sticky-footer {
@@ -10763,7 +10762,7 @@
  }
 
  .copyright-wrap {
-     padding: 26.5px 0;
+     padding-bottom: 40px;
      background-size: 100% auto;
      background-color: var(--title-color)
  }
@@ -11138,7 +11137,7 @@
  }
 
  .footer-layout1 .footer-top {
-     padding: 0 0 100px;
+     padding: 0 0 50px;
      border-bottom: 1px solid var(--black-color3)
  }
 
@@ -11155,31 +11154,36 @@
 
  @media (max-width: 1500px) {
      .footer-layout1 .footer-top .shadow-text {
-         font-size: 180px
+         font-size: 180px;
+         color: var(--white-color)
      }
  }
 
  @media (max-width: 1399px) {
      .footer-layout1 .footer-top .shadow-text {
-         font-size: 160px
+         font-size: 160px;
+         color: var(--white-color)
      }
  }
 
  @media (max-width: 1299px) {
      .footer-layout1 .footer-top .shadow-text {
-         font-size: 140px
+         font-size: 140px;
+         color: var(--white-color)
      }
  }
 
  @media (max-width: 1199px) {
      .footer-layout1 .footer-top .shadow-text {
-         font-size: 120px
+         font-size: 120px;
+          color: var(--white-color)
      }
  }
 
  @media (max-width: 991px) {
      .footer-layout1 .footer-top .shadow-text {
-         font-size: 100px
+         font-size: 100px;
+         color: var(--white-color)
      }
  }
 
@@ -11240,20 +11244,20 @@
  }
 
  .footer-layout1 .footer-top .contact-info-card.contact-phone-info .box-text {
-     font-size: 58px;
+     font-size: 25px;
      font-weight: 400;
      margin-top: -0.3em
  }
 
  @media (max-width: 1299px) {
      .footer-layout1 .footer-top .contact-info-card.contact-phone-info .box-text {
-         font-size: 40px
+         font-size: 25px
      }
  }
 
  @media (max-width: 1199px) {
      .footer-layout1 .footer-top .contact-info-card.contact-phone-info .box-text {
-         font-size: 32px
+         font-size: 25px
      }
  }
 
@@ -11269,7 +11273,7 @@
 
  .footer-layout1 .widget-area {
      padding-bottom: 50px;
-     padding-top: 100px
+     padding-top: 50px
  }
 
  .footer-layout1 .footer-text {
@@ -16433,12 +16437,12 @@
 
  @media (max-width: 1399px) {
      .consulting-wrap1 .page-img {
-         height: 600px
+         height: 500px
      }
 
      .consulting-wrap1 .page-img img {
          height: 100%;
-         object-fit: cover
+         object-fit: contain;
      }
  }
 

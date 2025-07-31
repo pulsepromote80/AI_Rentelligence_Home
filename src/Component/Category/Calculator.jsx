@@ -21,7 +21,7 @@ const Calculator = () => {
       <section className="why-sec3 overflow-hidden space">
         <div className="container-fluid p-0">
           <div className="why-wrap3">
-            <div className="why-box3-1">
+            <div className="why-box3-1" id= "why-choose-us">
               <div
                 className="img1"
                 style={{ backgroundImage: `url(${Image.whythumbshape3}) ` }}

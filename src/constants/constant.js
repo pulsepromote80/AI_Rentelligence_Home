@@ -172,21 +172,22 @@ export const allCards = [
 
 export const stats = [
   {
-    title: "Global User Base",
-    value: 2000000,
-    subtitle: "2 Million+ Users",
+    title: "Agent Deployed",
+    value: 5000,
+    subtitle: "5K+ Agents ",
   },
   {
-    title: "Transaction Volume",
-    value: 1000000000,
-    prefix: "$",
-    subtitle: "Total Transaction Volume",
+    title: "Rentel Volume",
+    value: 1,
+    // prefix: "$",
+     suffix: "M",
+    subtitle: "Total Rentel Volume",
   },
   {
-    title: "High-Speed Processing",
+    title: "Agentic Effeciency",
     value: 99,
     suffix: "%",
-    subtitle: "Faster Transactions",
+    subtitle: "Fast Working Effeciency",
   },
 ];
 

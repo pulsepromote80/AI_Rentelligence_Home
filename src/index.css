@@ -12,4 +12,9 @@ code {
     monospace;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+
 

@@ -9,7 +9,7 @@ const Security = () => {
   }, []);
   return (
     <>
-      <div className="space">
+      <div className="space" id="security">
         <div className="row justify-content-center" data-aos="fade-up">
           <div className="col-xxl-7 col-xl-8">
             <div className="title-area text-center mb-50">

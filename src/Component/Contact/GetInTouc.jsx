@@ -75,17 +75,17 @@ const GetInTouc = () => {
                           <option value="" disabled hidden>
                             Select Subject
                           </option>
-                          <option value="Web Development">
-                            Web Development
+                          <option value=" Follow Up Genius">
+                            Follow Up Genius
                           </option>
-                          <option value="Brand Marketing">
-                            Brand Marketing
+                          <option value="AdWriterX">
+                            AdWriterX
                           </option>
-                          <option value="UI/UX Designing">
-                            UI/UX Designing
+                          <option value=" Nexus">
+                         Nexus
                           </option>
-                          <option value="Digital Marketing">
-                            Digital Marketing
+                          <option value=" NeoMind AI">
+                            NeoMind AI
                           </option>
                         </select>
                       </div>
@@ -103,15 +103,14 @@ const GetInTouc = () => {
                         <textarea
                           name="message"
                           id="message"
-                          cols="30"
-                          rows="3"
-                          className="form-control"
-                          placeholder="How can we help you? feel free to get in touch!*"
+                         
+                          // className="form-control"
+                          placeholder="Type your Message"
                         ></textarea>
                       </div>
                       <div className="form-btn col-12">
                         <button className="th-btn style5" type="button">
-                          Submit Message
+                          Submit 
                         </button>
                       </div>
                     </div>
