@@ -17,7 +17,7 @@ import TermsCondition from "./Component/TermsAndCondition/TermsCondition";
 function App() {
   return (
     <>
-      <body className="bg-black">
+      <div className="bg-black">
         <Header />
         <Routes>
           <Route path="/" element={<Wapper />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/TermsCondition" element={<TermsCondition />} />
         </Routes>
         <Footer />
-      </body>
+      </div>
     </>
   );
 }

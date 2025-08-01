@@ -100,35 +100,51 @@ const TermsContent = () => {
 
           {/* --- End of Terms Card --- */}
           <div className="container mt-5">
-      <div className="card shadow-sm">
-        <div className="card-header bg-primary text-white">
-          <h5 className="mb-0">Rentelligence Platform Information</h5>
-        </div>
-        <div className="card-body">
-          <div className="row">
-            <div className="col-md-6">
-              <p className="mb-2"><strong>Effective Date:</strong></p>
-              <p className="text-muted">17 June, 2025</p>
-            </div>
-            <div className="col-md-6">
-              <p className="mb-2"><strong>Last Updated:</strong></p>
-              <p className="text-muted">31 July, 2025</p>
+            <div className="card shadow-sm">
+              <div className="card-header bg-primary text-white">
+                <h5 className="mb-0">Rentelligence Platform Information</h5>
+              </div>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-md-6">
+                    <p className="mb-2">
+                      <strong>Effective Date:</strong>
+                    </p>
+                    <p className="text-muted">17 June, 2025</p>
+                  </div>
+                  <div className="col-md-6">
+                    <p className="mb-2">
+                      <strong>Last Updated:</strong>
+                    </p>
+                    <p className="text-muted">31 July, 2025</p>
+                  </div>
+                </div>
+                <div className="row mt-3">
+                  <div className="col-12">
+                    <p className="mb-2">
+                      <strong>Platform Name:</strong>
+                    </p>
+                    <p className="text-muted">
+                      Rentelligence (
+                      <a
+                        href="https://www.rentelligence.ai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        www.rentelligence.ai
+                      </a>
+                      )
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="card-footer bg-light">
+                <small className="text-muted">
+                  Information current as of last updated date
+                </small>
+              </div>
             </div>
           </div>
-          <div className="row mt-3">
-            <div className="col-12">
-              <p className="mb-2"><strong>Platform Name:</strong></p>
-              <p className="text-muted">
-                Rentelligence (<a href="https://www.rentelligence.ai" target="_blank" rel="noopener noreferrer">www.rentelligence.ai</a>)
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="card-footer bg-light">
-          <small className="text-muted">Information current as of last updated date</small>
-        </div>
-      </div>
-    </div>
 
           <div class="container my-5">
             <div class="mb-4 p-4 welcome-box rounded">
@@ -278,348 +294,362 @@ const TermsContent = () => {
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
+              <div class="accordion" id="termsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      4. Ownership & Licensing
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#termsAccordion"
                   >
-                    4. Ownership & Licensing
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        Providers retain ownership of their AI Agents unless
-                        explicitly transferred.
-                      </li>
-                      <li>
-                        Clients are granted a license (as defined in each
-                        transaction) to use the Agent for the intended period
-                        and purpose.
-                      </li>
-                      <li>
-                        Resale, redistribution, or modification of rented or
-                        leased AI Agents is prohibited unless expressly
-                        permitted by the Provider.
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Providers retain ownership of their AI Agents unless
+                          explicitly transferred.
+                        </li>
+                        <li>
+                          Clients are granted a license (as defined in each
+                          transaction) to use the Agent for the intended period
+                          and purpose.
+                        </li>
+                        <li>
+                          Resale, redistribution, or modification of rented or
+                          leased AI Agents is prohibited unless expressly
+                          permitted by the Provider.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      5. User Conduct
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#termsAccordion"
                   >
-                    5. User Conduct
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <p>You agree not to:</p>
-                    <ul>
-                      <li>
-                        Use the Platform for illegal, fraudulent, or malicious
-                        purposes.
-                      </li>
-                      <li>Upload malicious code or unauthorized data.</li>
-                      <li>Violate intellectual property rights of others.</li>
-                      <li>Misrepresent AI Agents or falsify reviews.</li>
-                      <li>
-                        Manipulate blockchain transactions to exploit the
-                        system.
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <p>You agree not to:</p>
+                      <ul>
+                        <li>
+                          Use the Platform for illegal, fraudulent, or malicious
+                          purposes.
+                        </li>
+                        <li>Upload malicious code or unauthorized data.</li>
+                        <li>Violate intellectual property rights of others.</li>
+                        <li>Misrepresent AI Agents or falsify reviews.</li>
+                        <li>
+                          Manipulate blockchain transactions to exploit the
+                          system.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      6. Payment & Fees
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSix"
+                    data-bs-parent="#termsAccordion"
                   >
-                    6. Payment & Fees
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        Fees for transactions, including network (gas) fees,
-                        will be clearly stated before confirmation.{" "}
-                      </li>
-                      <li>
-                        Rentelligence may charge a platform fee or commission
-                        for facilitating transactions.{" "}
-                      </li>
-                      <li>
-                        All payments are final and processed via smart
-                        contracts. Refunds are only applicable under specific
-                        dispute resolutions.{" "}
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Fees for transactions, including network (gas) fees,
+                          will be clearly stated before confirmation.
+                        </li>
+                        <li>
+                          Rentelligence may charge a platform fee or commission
+                          for facilitating transactions.
+                        </li>
+                        <li>
+                          All payments are final and processed via smart
+                          contracts. Refunds are only applicable under specific
+                          dispute resolutions.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven"
+                    >
+                      7. Decentralization Disclaimer
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSeven"
+                    data-bs-parent="#termsAccordion"
                   >
-                    7. Decentralization Disclaimer
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <p>As a decentralized platform:</p>
-                    <ul>
-                      <li>
-                        Rentelligence does not store AI Agents on centralized
-                        servers.{" "}
-                      </li>
-                      <li>
-                        Rentelligence has limited control over smart contracts
-                        once deployed. .{" "}
-                      </li>
-                      <li>
-                        Users must understand the risks of interacting with
-                        decentralized technology and blockchain.{" "}
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <p>As a decentralized platform:</p>
+                      <ul>
+                        <li>
+                          Rentelligence does not store AI Agents on centralized
+                          servers.
+                        </li>
+                        <li>
+                          Rentelligence has limited control over smart contracts
+                          once deployed.
+                        </li>
+                        <li>
+                          Users must understand the risks of interacting with
+                          decentralized technology and blockchain.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight"
+                      aria-expanded="false"
+                      aria-controls="collapseEight"
+                    >
+                      8. Disclaimers
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEight"
+                    data-bs-parent="#termsAccordion"
                   >
-                    8. Disclaimers 
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                  
-                    <ul>
-                      <li>
-                        AI Agents are provided “as is” without warranties of any kind.{" "}
-                      </li>
-                      <li>
-                        Rentelligence makes no guarantees regarding the accuracy, performance, or suitability of any AI Agent.{" "}
-                      </li>
-                      <li>
-                      Users assume all risks associated with the use, output, or decision-making of AI Agents. .{" "}
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          AI Agents are provided “as is” without warranties of
+                          any kind.
+                        </li>
+                        <li>
+                          Rentelligence makes no guarantees regarding the
+                          accuracy, performance, or suitability of any AI Agent.
+                        </li>
+                        <li>
+                          Users assume all risks associated with the use,
+                          output, or decision-making of AI Agents.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine"
+                      aria-expanded="false"
+                      aria-controls="collapseNine"
+                    >
+                      9. Limitation of Liability
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseNine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingNine"
+                    data-bs-parent="#termsAccordion"
                   >
-                    9. Limitation of Liability 
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <p>To the maximum extent permitted by law, Rentelligence and its aAiliates shall not be liable for: </p>
-                    <ul>
-                      <li>
-                        Any indirect, incidental, or consequential damages.{" "}
-                      </li>
-                      <li>
-                        Loss of data, revenue, or reputation.{" "}
-                      </li>
-                      <li>
-                       Errors, bugs, or failures in smart contracts or AI Agents.{" "}
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <p>
+                        To the maximum extent permitted by law, Rentelligence
+                        and its affiliates shall not be liable for:
+                      </p>
+                      <ul>
+                        <li>
+                          Any indirect, incidental, or consequential damages.
+                        </li>
+                        <li>Loss of data, revenue, or reputation.</li>
+                        <li>
+                          Errors, bugs, or failures in smart contracts or AI
+                          Agents.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTen">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTen"
+                      aria-expanded="false"
+                      aria-controls="collapseTen"
+                    >
+                      10. Intellectual Property
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTen"
+                    data-bs-parent="#termsAccordion"
                   >
-                    10. Intellectual Property 
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                   
-                    <ul>
-                      <li>
-                        All Rentelligence branding, UI/UX designs, and
-                        trademarks are owned by Rentelligence and may not be
-                        used without written permission.
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          All Rentelligence branding, UI/UX designs, and
+                          trademarks are owned by Rentelligence and may not be
+                          used without written permission.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEleven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEleven"
+                      aria-expanded="false"
+                      aria-controls="collapseEleven"
+                    >
+                      11. Termination
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEleven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEleven"
+                    data-bs-parent="#termsAccordion"
                   >
-                    11. Termination
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        We reserve the right to suspend or terminate your access
-                        to the Platform without notice if you violate these
-                        Terms or applicable laws.
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          We reserve the right to suspend or terminate your
+                          access to the Platform without notice if you violate
+                          these Terms or applicable laws.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwelve">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwelve"
+                      aria-expanded="false"
+                      aria-controls="collapseTwelve"
+                    >
+                      12. Governing Law
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwelve"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwelve"
+                    data-bs-parent="#termsAccordion"
                   >
-                    12. Governing Law
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        hese Terms shall be governed by and construed in
-                        accordance with the laws of [Insert Jurisdiction].
-                        Disputes may be resolved via arbitration or as otherwise
-                        specified in a smart contract-based dispute mechanism.
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          These Terms shall be governed by and construed in
+                          accordance with the laws of [Insert Jurisdiction].
+                          Disputes may be resolved via arbitration or as
+                          otherwise specified in a smart contract-based dispute
+                          mechanism.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThirteen">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThirteen"
+                      aria-expanded="false"
+                      aria-controls="collapseThirteen"
+                    >
+                      13. Amendments
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThirteen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThirteen"
+                    data-bs-parent="#termsAccordion"
                   >
-                    13. Amendments
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#termsAccordion"
-                >
-                  <div class="accordion-body">
-                    <ul>
-                      <li>
-                        We may revise these Terms at any time. Continued use of
-                        the Platform following changes indicates your acceptance
-                        of the updated Terms.
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          We may revise these Terms at any time. Continued use
+                          of the Platform following changes indicates your
+                          acceptance of the updated Terms.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
