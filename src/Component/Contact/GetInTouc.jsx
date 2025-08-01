@@ -1,15 +1,102 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "../Image";
+import {toast} from "react-toastify";
 
-const GetInTouc = () => {
+const GetInTouch = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    const newErrors = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{7,15}$/;
+
+    if (!formData.name.trim()) newErrors.name = "Name is required.";
+    if (!formData.email.trim()) newErrors.email = "Email is required.";
+    else if (!emailRegex.test(formData.email))
+      newErrors.email = "Invalid email format.";
+
+    if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
+    else if (!phoneRegex.test(formData.phone))
+      newErrors.phone = "Invalid phone number.";
+
+    if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required.";
+    } 
+
+    return newErrors;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setMessage("");
+
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://apis.rentelligence.biz/api/Geography/addContactUs",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+     if(response.status === 200) {
+        toast.success("Query send successfully!");
+      }
+
+      if (response.ok) {
+        setMessage("Your message has been sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        setErrors({});
+      } else {
+        setMessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setMessage("Network error. Please try again later.");
+    }
+  };
 
   return (
     <div
@@ -31,90 +118,74 @@ const GetInTouc = () => {
                 </div>
                 <div className="contact-form-v1">
                   <form
-                    action=""
-                    method="POST"
                     className="contact-form ajax-contact"
+                    onSubmit={handleSubmit}
                   >
                     <div className="row">
-                      <div className="form-group style-border col-md-6">
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="name"
-                          id="name"
-                          placeholder="Your name"
-                        />
-                        <i className="far fa-user"></i>
-                      </div>
-                      <div className="form-group style-border col-md-6">
-                        <input
-                          type="email"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="Email Address"
-                        />
-                        <i className="far fa-envelope"></i>
-                      </div>
-                      <div className="form-group style-border col-md-6">
-                        <input
-                          type="number"
-                          className="form-control"
-                          name="phone"
-                          id="phone"
-                          placeholder="Phone Number"
-                        />
-                        <i className="far fa-phone"></i>
-                      </div>
-                      <div className="form-group style-border col-md-6">
-                        <select
-                          name="subject"
-                          id="subject"
-                          className="form-select bg-white"
-                        >
-                          <option value="" disabled hidden>
-                            Select Subject
-                          </option>
-                          <option value=" Follow Up Genius">
-                            Follow Up Genius
-                          </option>
-                          <option value="AdWriterX">
-                            AdWriterX
-                          </option>
-                          <option value=" Nexus">
-                         Nexus
-                          </option>
-                          <option value=" NeoMind AI">
-                            NeoMind AI
-                          </option>
-                        </select>
-                      </div>
-                      <div className="form-group style-border col-12">
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="company"
-                          id="company"
-                          placeholder="Company name"
-                        />
-                        <i className="far fa-circle-info"></i>
-                      </div>
+                      {["name", "email", "phone", "subject"].map(
+                        (field, index) => (
+                          <div
+                            className="form-group style-border col-md-6"
+                            key={field}
+                          >
+                            <input
+                              type={
+                                field === "email"
+                                  ? "email"
+                                  : field === "phone"
+                                  ? "number"
+                                  : "text"
+                              }
+                              className="form-control"
+                              name={field}
+                              value={formData[field]}
+                              onChange={handleChange}
+                              placeholder={
+                                field.charAt(0).toUpperCase() +
+                                field.slice(1).replace(/([A-Z])/g, " $1")
+                              }
+                            />
+                            {errors[field] && (
+                              <small className="text-danger">
+                                {errors[field]}
+                              </small>
+                            )}
+                            <i
+                              className={`far fa-${
+                                field === "name"
+                                  ? "user"
+                                  : field === "email"
+                                  ? "envelope"
+                                  : field === "phone"
+                                  ? "phone"
+                                  : "circle-info"
+                              }`}
+                            ></i>
+                          </div>
+                        )
+                      )}
                       <div className="form-group style-border col-12">
                         <textarea
                           name="message"
-                          id="message"
-                         
-                          // className="form-control"
+                          value={formData.message}
+                          onChange={handleChange}
                           placeholder="Type your Message"
                         ></textarea>
+                        {errors.message && (
+                          <small className="text-danger">
+                            {errors.message}
+                          </small>
+                        )}
                       </div>
-                      <div className="form-btn col-12">
-                        <button className="th-btn style5" type="button">
-                          Submit 
+                      <div className="form-btn col-12 cursor-pointer">
+                        <button className="th-btn style5" type="submit">
+                          Submit
                         </button>
                       </div>
                     </div>
-                    <p className="form-messages mb-0 mt-3"></p>
+                    {message && (
+                      <p className="form-messages mb-0 mt-3">{message}</p>
+                    )}
                   </form>
                 </div>
               </div>
@@ -126,4 +197,4 @@ const GetInTouc = () => {
   );
 };
 
-export default GetInTouc;
+export default GetInTouch;

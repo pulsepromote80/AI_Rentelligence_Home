@@ -81,7 +81,7 @@ const Footer = () => {
                           <i className="fab fa-twitter"></i>
                         </a>
                          <a href="#" target="_blank">
-                          <i class="fa-brands fa-telegram"></i>
+                          <i className="fa-brands fa-telegram"></i>
                         </a>
                         {/* <a href="/">
                           <i className="fab fa-youtube"></i>
