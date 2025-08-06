@@ -50,7 +50,7 @@ advanced AI agents that empower businesses and communities worldwide.
                 </div>
                 <div className="team-card-content">
                   <h3 className="box-title">
-                    <a href="/">Alex Javed</a>
+                    <a href="/">Mr. Tayer Krex</a>
                   </h3>
                 </div>
                 <div className="th-social">
@@ -76,7 +76,7 @@ advanced AI agents that empower businesses and communities worldwide.
                 </div>
                 <div className="team-card-content">
                   <h3 className="box-title">
-                    <a href="/">Jenny William</a>
+                    <a href="/">Amelia Hart</a>
                   </h3>
                 </div>
                 <div className="th-social">
@@ -102,7 +102,7 @@ advanced AI agents that empower businesses and communities worldwide.
                 </div>
                 <div className="team-card-content">
                   <h3 className="box-title">
-                    <a href="/">Daniel Thomas</a>
+                    <a href="/">Oliver Knight</a>
                   </h3>
                 </div>
                 <div className="th-social">
