@@ -121,58 +121,7 @@ advanced AI agents that empower businesses and communities worldwide.
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="th-team team-card" data-aos="fade-up">
-                <div className="team-img">
-                  <img src={Image.teamimg4} alt="Team" />
-                </div>
-                <div className="team-card-content">
-                  <h3 className="box-title">
-                    <a href="/">Jessica Lauren</a>
-                  </h3>
-                </div>
-                <div className="th-social">
-                  <a target="_blank" href="/">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a target="_blank" href="/">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a target="_blank" href="/">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a target="_blank" href="/">
-                    <i className="fab fa-whatsapp"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="th-team team-card" data-aos="fade-up">
-                <div className="team-img">
-                  <img src={Image.teamimg5} alt="Team" />
-                </div>
-                <div className="team-card-content">
-                  <h3 className="box-title">
-                    <a href="/">Alex Joseph</a>
-                  </h3>
-                </div>
-                <div className="th-social">
-                  <a target="_blank" href="/">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a target="_blank" href="/">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a target="_blank" href="/">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a target="_blank" href="/">
-                    <i className="fab fa-whatsapp"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+           
             <div className="col-xl-3 col-lg-4 col-md-6 align-self-center text-center">
               <a
                 href="/"
