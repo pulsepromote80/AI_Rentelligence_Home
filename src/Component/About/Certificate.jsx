@@ -14,7 +14,7 @@ const Certificate = () => {
     <>
       <div
         className="space overflow-hidden contact-area-1 position-relative z-index-common bg-white"
-        id="contact-sec"
+        id="certificate"
       >
         <div className="container">
           <div className="consulting-wrap1 bg-smoke">

@@ -19,6 +19,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { useEffect, useRef, useState } from "react";
 import { serviceData } from "../../constants/constant";
+import RecentArticles from "./Articles";
 
 const Sectionfive = () => {
   const [hovered, setHovered] = useState(null);
@@ -298,7 +299,8 @@ const Wapper = () => {
 
       <Consulting />
 
-      <Team />
+      {/* <Team /> */}
+      <RecentArticles/>
 
       <Leading />
 

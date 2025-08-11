@@ -75,10 +75,25 @@ import featurethumbshape5 from "../assets/img/feature/3-4.png";
 import featurethumbshape6 from "../assets/img/feature/3-5.png";
 import featurethumbshape7 from "../assets/img/feature/3-6.png";
 import PDF from "../assets/Certificate.pdf";
-
+import articles1 from "../assets/img/airticles/articles1.jpg";
+import articles3 from "../assets/img/airticles/articles3.jpg";
+import articles4 from "../assets/img/airticles/airticle4.png";
+import articles5 from "../assets/img/airticles/airticles5.webp";
+import articles6 from "../assets/img/airticles/airticles6.webp";
+import oli from "../assets/img/team/oli2.png";
+import py from "../assets/img/team/py3.png";
+import am from "../assets/img/team/am1.png";
 export default Image = {
   logo,
   herobg,
+  articles1,
+  articles3,
+  articles4,
+  articles5,
+  articles6,
+  oli,
+  py,
+  am,
   mdlogo,
   footerbgshape2,
   herocategorybg1,
