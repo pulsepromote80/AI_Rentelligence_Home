@@ -34,20 +34,6 @@ const RecentArticles = () => {
     },
     {
       id: 2,
-      URL: "https://oodaloop.com/briefs/technology/1-humanoid-robot-at-5-hour-can-do-the-work-of-2-humans-at-25-hour/",
-      author: "Humanoid ROI Advantage",
-      date: "2 Aug 2024",
-      title:
-        "1 humanoid robot at $5/hour can do the work of 2 humans at $25/hour",
-      excerpt:
-        "Morgan Stanley estimates that a single humanoid robot costing $5 per hour could match the productivity of two human workers earning $25 per hour, creating an economic value of roughly $200,000 per unit over its working life.",
-      content:
-        "This article would discuss strategies for integrating online and offline sales channels, including inventory synchronization, unified customer profiles, and omnichannel marketing approaches.",
-      image: Image.blogimg2,
-      imageAlt: "Laptop showing an online store next to a physical store",
-    },
-    {
-      id: 3,
       URL: "https://80000hours.org/2025/01/how-quickly-could-robots-scale-up/",
       author: "By Benjamin Todd",
       date: "21 Jan 2025",
@@ -60,7 +46,7 @@ const RecentArticles = () => {
       imageAlt: "Padlock icon representing security",
     },
     {
-      id: 4,
+      id: 3,
       URL: "https://www.widemoatresearch.com/wide-moat-daily/humanoid-robots-for-0-40-an-hour/amp/",
       author: "RoboLabor Advantage",
       date: "20 Jan 2025",
@@ -71,6 +57,20 @@ const RecentArticles = () => {
         "Detailed discussion about POS security features, PCI compliance, encryption standards, and best practices for protecting customer payment information and business data.",
       image: Image.articles4,
       imageAlt: "Padlock icon representing security",
+    },
+    {
+      id: 4,
+      URL: "https://oodaloop.com/briefs/technology/1-humanoid-robot-at-5-hour-can-do-the-work-of-2-humans-at-25-hour/",
+      author: "Humanoid ROI Advantage",
+      date: "2 Aug 2024",
+      title:
+        "1 humanoid robot at $5/hour can do the work of 2 humans at $25/hour",
+      excerpt:
+        "Morgan Stanley estimates that a single humanoid robot costing $5 per hour could match the productivity of two human workers earning $25 per hour, creating an economic value of roughly $200,000 per unit over its working life.",
+      content:
+        "This article would discuss strategies for integrating online and offline sales channels, including inventory synchronization, unified customer profiles, and omnichannel marketing approaches.",
+      image: Image.blogimg2,
+      imageAlt: "Laptop showing an online store next to a physical store",
     },
     {
       id: 5,
@@ -270,7 +270,7 @@ const RecentArticles = () => {
 
                     <div className="blog-content">
                       <h3 className="box-title title-truncate">
-                        <a href="/">{article.title}</a>
+                        <a href={article.URL} target="_blank">{article.title}</a>
                       </h3>
                       <p
                         className="sec-title text-anim2 text-white new-font-size aos-init aos-animate excerpt-truncate"
