@@ -18,7 +18,7 @@ const Calculator = () => {
       `}
       </style>
 
-      <section className="why-sec3 overflow-hidden space">
+      <section className="why-sec3 overflow-hidden space" id="whychooseus">
         <div className="container-fluid p-0">
           <div className="why-wrap3">
             <div className="why-box3-1" id= "why-choose-us">

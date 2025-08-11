@@ -4,7 +4,7 @@ import Wapper from "./Component/Home/Wapper";
 import "./assets/css/style.css";
 import "./assets/css/app.min.css";
 import "./assets/css/fontawesome.min.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Main from "./Component/About/Main";
@@ -13,8 +13,10 @@ import Service from "./Component/service/Service";
 import Category from "./Component/Category/Category";
 import PrivacyPolicy from "./Component/PrivacyPolicy/PrivacyPolicy";
 import TermsCondition from "./Component/TermsAndCondition/TermsCondition";
+import RecentArticles from "./Component/Home/Articles";
 
 function App() {
+ 
   return (
     <>
       <div className="bg-black">
@@ -27,6 +29,7 @@ function App() {
           <Route path="/Category" element={<Category />} />
           <Route path="/Privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsCondition" element={<TermsCondition />} />
+          <Route path="/RecentArticles" element={<RecentArticles />} />
         </Routes>
         <Footer />
       </div>
