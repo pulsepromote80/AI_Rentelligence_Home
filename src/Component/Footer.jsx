@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "../Component/Image";
 import { useNavigate } from "react-router-dom";
-
+import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -91,20 +91,20 @@ const Footer = () => {
                         44 Whitfield Road, London, England, E6 1AS
                       </p>
                       <div className="th-social style10">
-                        <a href="#" target="_blank">
+                        <a href="https://www.facebook.com/rentelligenceai" target="_blank">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" target="_blank">
-                          <i className="fab fa-twitter"></i>
+                          <FaXTwitter size={16} color="#fff" />
                         </a>
-                        <a href="#" target="_blank">
+                        {/* <a href="#" target="_blank">
                           <i className="fa-brands fa-telegram"></i>
-                        </a>
+                        </a> */}
                         {/* <a href="/">
                           <i className="fab fa-youtube"></i>
                         </a> */}
-                        <a href="#">
-                          <i className="fab fa-linkedin-in"></i>
+                        <a href="https://www.instagram.com/rentelligence.ai?igsh=bmdxcXJqaDd2empk" target="_blank">
+                          <i className="fab fa-instagram"></i>
                         </a>
                       </div>
                     </div>

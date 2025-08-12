@@ -263,7 +263,7 @@ const RecentArticles = () => {
                     </div>
                     <div className="d-flex justify-content-between align-items-center mb-3">
                       <span className="text-white">{article.author}</span>
-                      <small className="text-white">{article.date}</small>
+                      {/* <small className="text-white">{article.date}</small> */}
                     </div>
 
                     <hr></hr>

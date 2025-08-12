@@ -660,12 +660,15 @@ const TermsContent = () => {
                 <div>
                   <h5 class="mb-1">Need help?</h5>
                   <p class="mb-0 text-muted">
-                    Contact us at support@rentelligence.ai
+                    Contact us at : 
+                    <a href="mailto:help24/7.info@rentelligence.com">
+                      info@rentelligence.ai
+                    </a>
                   </p>
                 </div>
-                <a href="https://rentelligence.ai" class="btn btn-primary">
+                {/* <a href="https://rentelligence.ai" class="btn btn-primary">
                   Visit Rentelligence
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
