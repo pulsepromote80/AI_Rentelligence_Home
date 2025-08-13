@@ -261,8 +261,8 @@ const Wapper = () => {
                     data-aos="fade-up"
                     data-aos-delay="500"
                   >
-                    <a href="https://rentelligence.biz/" className="th-btn style2">
-                      Get Started{" "}
+                    <a href="https://rentelligence.biz/home/register" className="th-btn style2">
+                      Get Started Now{" "}
                       <i className="far fa-long-arrow-right ms-2"></i>
                     </a>
                   </div>
