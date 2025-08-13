@@ -26590,3 +26590,38 @@ background: radial-gradient(circle at center, #2f2d9187, #000000 80%);
         color: #b9b4b4;
 }
 }
+
+h4.box-text.d-flex.whaticonwithno {
+    position: relative;
+    left: -57px;
+}
+/* Medium screens */
+@media (max-width: 1024px) {
+  h4.box-text.d-flex.whaticonwithno {
+    left: -30px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  h4.box-text.d-flex.whaticonwithno {
+    left: -15px;
+  }
+}
+
+/* Extra small (mobile) */
+@media (max-width: 480px) {
+  h4.box-text.d-flex.whaticonwithno {
+    left: 0;
+  }
+}
+i.fab.fa-whatsapp.whaticonwithno {
+    font-size: 23px;
+}
+.whaticonwithno{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+i.fab.fa-whatsapp.whaticonwithno:hover .whaticonwithno{
+    color: #fff;
+}

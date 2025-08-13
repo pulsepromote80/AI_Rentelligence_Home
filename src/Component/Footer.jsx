@@ -10,7 +10,7 @@ const Footer = () => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const goToSection = (path,sectionId, e) => {
+  const goToSection = (path, sectionId, e) => {
     e.preventDefault();
     // URL update
     navigate(`${path}#${sectionId}`);
@@ -56,8 +56,23 @@ const Footer = () => {
               <div className="col-lg-auto" data-aos="slide-up">
                 <div className="contact-info-card contact-phone-info">
                   <p className="box-title">Phone Call</p>
-                  <h4 className="box-text">
-                    <a href="tel:7123 45XXXX">+44 7123 45XXXX</a>
+                  <h4 className="box-text d-flex whaticonwithno">
+                    <div className="th-social style10 whaticonwithno ">
+                      <a
+                        href="https://wa.me/447909033910"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-whatsapp whaticonwithno "></i>
+                      </a>
+                    </div>
+                    <a
+                      href="https://wa.me/447909033910"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      +44 7909 033910
+                    </a>
                   </h4>
                 </div>
               </div>
@@ -91,7 +106,10 @@ const Footer = () => {
                         44 Whitfield Road, London, England, E6 1AS
                       </p>
                       <div className="th-social style10">
-                        <a href="https://www.facebook.com/rentelligenceai" target="_blank">
+                        <a
+                          href="https://www.facebook.com/rentelligenceai"
+                          target="_blank"
+                        >
                           <i className="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" target="_blank">
@@ -103,7 +121,17 @@ const Footer = () => {
                         {/* <a href="/">
                           <i className="fab fa-youtube"></i>
                         </a> */}
-                        <a href="https://www.instagram.com/rentelligence.ai?igsh=bmdxcXJqaDd2empk" target="_blank">
+                        <a
+                          href="https://wa.me/447909033910"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fab fa-whatsapp"></i>
+                        </a>
+                        <a
+                          href="https://www.instagram.com/rentelligence.ai?igsh=bmdxcXJqaDd2empk"
+                          target="_blank"
+                        >
                           <i className="fab fa-instagram"></i>
                         </a>
                       </div>
@@ -142,23 +170,49 @@ const Footer = () => {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="#whychooseus" onClick={(e) => goToSection("/Category","whychooseus", e)}>
+                          <a
+                            href="#whychooseus"
+                            onClick={(e) =>
+                              goToSection("/Category", "whychooseus", e)
+                            }
+                          >
                             Why Choose Us
                           </a>
                         </li>
                         <li>
-                          <a href="#futurescope" onClick={(e) => goToSection("/","futurescope", e)}>
+                          <a
+                            href="#futurescope"
+                            onClick={(e) => goToSection("/", "futurescope", e)}
+                          >
                             Future Scope
                           </a>
                         </li>
                         <li>
-                          <a href="#articles" onClick={(e) => goToSection("/","articles", e)}>News & Articles</a>
+                          <a
+                            href="#articles"
+                            onClick={(e) => goToSection("/", "articles", e)}
+                          >
+                            News & Articles
+                          </a>
                         </li>
                         <li>
-                          <a href="#certificate" onClick={(e) => goToSection("/main","certificate", e)}> Certificate</a>
+                          <a
+                            href="#certificate"
+                            onClick={(e) =>
+                              goToSection("/main", "certificate", e)
+                            }
+                          >
+                            {" "}
+                            Certificate
+                          </a>
                         </li>
                         <li>
-                          <a href="#ourclient" onClick={(e) => goToSection("/","ourclient", e)}>Testimonials</a>
+                          <a
+                            href="#ourclient"
+                            onClick={(e) => goToSection("/", "ourclient", e)}
+                          >
+                            Testimonials
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -171,19 +225,44 @@ const Footer = () => {
                     <div className="menu-all-pages-container">
                       <ul className="menu">
                         <li>
-                          <a href="#service-sec" onClick={(e) => goToSection("/","service-sec", e)}>AI Agent Development</a>
+                          <a
+                            href="#service-sec"
+                            onClick={(e) => goToSection("/", "service-sec", e)}
+                          >
+                            AI Agent Development
+                          </a>
                         </li>
                         <li>
-                          <a href="#service-sec" onClick={(e) => goToSection("/","service-sec", e)}>Blockchain Data Analytics</a>
+                          <a
+                            href="#service-sec"
+                            onClick={(e) => goToSection("/", "service-sec", e)}
+                          >
+                            Blockchain Data Analytics
+                          </a>
                         </li>
                         <li>
-                          <a href="#service-sec" onClick={(e) => goToSection("/","service-sec", e)}>Adaptive Machine Learning</a>
+                          <a
+                            href="#service-sec"
+                            onClick={(e) => goToSection("/", "service-sec", e)}
+                          >
+                            Adaptive Machine Learning
+                          </a>
                         </li>
                         <li>
-                          <a href="#service-sec" onClick={(e) => goToSection("/","service-sec", e)}>AI Strategy & Consulting</a>
+                          <a
+                            href="#service-sec"
+                            onClick={(e) => goToSection("/", "service-sec", e)}
+                          >
+                            AI Strategy & Consulting
+                          </a>
                         </li>
                         <li>
-                          <a href="#service-sec" onClick={(e) => goToSection("/","service-sec", e)}>Process Automation Agents</a>
+                          <a
+                            href="#service-sec"
+                            onClick={(e) => goToSection("/", "service-sec", e)}
+                          >
+                            Process Automation Agents
+                          </a>
                         </li>
                       </ul>
                     </div>

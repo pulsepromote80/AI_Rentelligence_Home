@@ -50,7 +50,6 @@ const QuickContact = () => {
               </div>
               <h4 className="box-title">Email us</h4>
               <p className="box-text">
-                
                 <a href="mailto:info@rentelligence.ai">info@rentelligence.ai</a>
               </p>
             </div>
@@ -59,12 +58,17 @@ const QuickContact = () => {
           <div className="col-xl-3 mb-3">
             <div className="contact-info" data-aos="fade-up">
               <div className="box-icon">
-                <i className="fal fa-phone"></i>
+                <i className="fab fa-whatsapp"></i>
               </div>
-              <h4 className="box-title">Free Call</h4>
+              <h4 className="box-title">Free Chat</h4>
               <p className="box-text">
-               
-                <a href="tel:+919175513773">+44 7123 45XXXX</a>
+                <a
+                  href="https://wa.me/447909033910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +44 7909 033910
+                </a>
               </p>
             </div>
           </div>
