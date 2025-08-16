@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="container">
           <div className="footer-top">
-            <div className="shadow-text text-lg-center" data-aos="slide-up">
+            <div className="shadow-text text-lg-center text-white" data-aos="slide-up">
               Let’s Talk
             </div>
             <div
