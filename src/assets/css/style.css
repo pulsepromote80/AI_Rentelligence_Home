@@ -47,7 +47,9 @@
  body {
      scroll-behavior: auto !important
  }
-
+html, body {
+  overflow-x: hidden;
+}
  body {
      font-family: var(--body-font);
      font-size: 16px;
@@ -26624,4 +26626,12 @@ i.fab.fa-whatsapp.whaticonwithno {
 }
 i.fab.fa-whatsapp.whaticonwithno:hover .whaticonwithno{
     color: #fff;
+}
+@media(max-width:991px){
+ .secure-lock-wrapper{
+        width: 350px !important;
+ }
+ .mb-phone-0{
+    padding-bottom: 0px !important;
+ }
 }

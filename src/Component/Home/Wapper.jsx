@@ -1,5 +1,5 @@
 import Flexibility from "./Flexibility";
-import Security from "./Security";
+// import Security from "./Security";
 import StatsSection from "./StatsSection";
 import DustParticles from "./DustParticles";
 import Features from "./Features";
@@ -91,9 +91,7 @@ const Sectionthree = () => {
   return (
     <>
       <div
-        className="overflow-hidden position-relative space overflow-hidden"
-        id="about-sec"
-      >
+        className="overflow-hidden position-relative overflow-hidden" id="about-sec">
         <div className="container">
           <div className="row gx-100 gy-60 align-items-center">
             <div className="col-xxl-6 col-xl-6">
@@ -289,7 +287,7 @@ const Wapper = () => {
 
       <Features />
 
-      <Security />
+      {/* <Security /> */}
 
       <Sectionthree />
 
