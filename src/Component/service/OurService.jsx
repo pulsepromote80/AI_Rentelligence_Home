@@ -24,7 +24,7 @@ const OurService = () => {
           <div className="row justify-content-center">
             <div className="col-xxl-8 col-xl-9 col-lg-8 col-md-10">
               <div className="title-area text-center">
-                <div className="shadow-title">Services</div>
+                <div className="shadow-title" style={{color:"#daebed94"}}>Services</div>
                 <span className="sub-title text-anim" data-aos="fade-up">
                   OUR SERVICES
                 </span>
