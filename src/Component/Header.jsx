@@ -33,7 +33,7 @@ const Header = () => {
               <li><Link to="/Category" onClick={closeMenu}>Category</Link> </li>
               <li><Link to="/Contact" onClick={closeMenu}>Contact Us</Link></li> 
             <li className="d-xl-block d-xl-none">
-            <Link to="https://rentelligence.ai/" className="th-btn style2 text-white"> Log in <i className="far fa-long-arrow-right ms-2"></i></Link>
+            <Link to="https://app.rentelligence.ai/home/login" className="th-btn style2 text-white"> Log in <i className="far fa-long-arrow-right ms-2"></i></Link>
              </li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ const Header = () => {
 
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
-                    <a href="https://rentelligence.ai/" className="th-btn style2">
+                    <a href="https://app.rentelligence.ai/home/login" className="th-btn style2">
                       Log in <i className="far fa-long-arrow-right ms-2"></i>
                     </a>
                   </div>
