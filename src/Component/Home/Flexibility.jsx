@@ -119,7 +119,7 @@ const Flexibility = () => {
                 conversational, ethical, autonomous, and blockchain-focused solutions like DeFi automation
                 and DAO governance.
               </p>
-              <a href="https://rentelligence.biz/" className="th-btn style2">
+              <a href="https://rentelligence.ai/" className="th-btn style2">
                 Get Started <i className="far fa-long-arrow-right ms-2"></i>
               </a>
             </div>
@@ -334,7 +334,7 @@ const Flexibility = () => {
                 Choose from purchase, lease, rent, or AIaaS to match your budget, timeline, and control
                 needs—scalable and cost-effective.
               </p>
-              <a href="https://rentelligence.biz/" className="th-btn style2">
+              <a href="https://rentelligence.ai/" className="th-btn style2">
                 Get Started <i className="far fa-long-arrow-right ms-2"></i>
               </a>
             </div>
@@ -371,7 +371,7 @@ const Flexibility = () => {
                 innovation through real-time simulations and co-creation.
 
               </p>
-              <a href="https://rentelligence.biz/" className="th-btn style2">
+              <a href="https://rentelligence.ai/" className="th-btn style2">
                 Get Started <i className="far fa-long-arrow-right ms-2"></i>
               </a>
             </div>
