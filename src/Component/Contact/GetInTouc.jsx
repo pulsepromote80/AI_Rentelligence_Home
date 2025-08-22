@@ -66,7 +66,7 @@ const GetInTouch = () => {
 
     try {
       const response = await fetch(
-        "https://apis.rentelligence.biz/api/Geography/addContactUs",
+        "https://rentelligence.live/api/Geography/addContactUs",
         {
           method: "POST",
           headers: {
