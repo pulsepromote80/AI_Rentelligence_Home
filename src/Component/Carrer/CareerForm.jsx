@@ -6,7 +6,7 @@ const CareerForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    mobile: "",
     subject: "",
     careerName: "",
     message: "",
@@ -54,19 +54,19 @@ const CareerForm = () => {
   const validate = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^[0-9]{7,15}$/;
+    const mobileRegex = /^[0-9]{7,15}$/;
 
     if (!formData.name.trim()) newErrors.name = "Name is required.";
     if (!formData.email.trim()) newErrors.email = "Email is required.";
     else if (!emailRegex.test(formData.email))
       newErrors.email = "Invalid email format.";
 
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
-    else if (!phoneRegex.test(formData.phone))
-      newErrors.phone = "Invalid phone number.";
+    if (!formData.mobile.trim()) newErrors.mobile = "Mobile number is required.";
+    else if (!mobileRegex.test(formData.mobile))
+      newErrors.mobile = "Invalid Mobile number.";
 
     if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
-if (!formData.careerName.trim()) newErrors.careerName = "Position is required.";
+    if (!formData.careerName.trim()) newErrors.careerName = "Position is required.";
     if (!formData.message.trim()) {
       newErrors.message = "Message is required.";
     } 
@@ -99,7 +99,7 @@ if (!formData.careerName.trim()) newErrors.careerName = "Position is required.";
         setFormData({
           name: "",
           email: "",
-          phone: "",
+          mobile: "",
           subject: "",
           careerName: "",
           message: "",
@@ -156,29 +156,29 @@ if (!formData.careerName.trim()) newErrors.careerName = "Position is required.";
 
             <div className="row mb-3">
               <div className="col-md-6">
-                <label className="form-label">Phone</label>
+                <label className="form-label">Mobile</label>
                 <input
                   type="tel"
-                  name="phone"
-                  placeholder="Phone No"
+                  name="mobile"
+                  placeholder="Mobile No"
                   className="form-control"
-                  value={formData.phone}
+                  value={formData.mobile}
                   onChange={handleChange}
                 />
-                {errors.phone && (
-                  <small className="text-danger">{errors.phone}</small>
+                {errors.mobile && (
+                  <small className="text-danger">{errors.mobile}</small>
                 )}
               </div>
               <div className="col-md-6">
-                <label className="form-label">Subject</label>
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Job "
-                  className="form-control"
-                  value={formData.subject}
-                  onChange={handleChange}
-                />
+                <label className="form-label">Experience</label>
+                <select name="subject" className="form-select" value={formData.subject} onChange={handleChange}>
+                  <option value="">Select Experience</option>
+                  <option value="Fresher">Fresher</option>
+                  <option value="1 - 2 years">1 - 2 years</option>
+                  <option value="3 - 5 years">3 - 5 years</option>
+                  <option value="6 - 10 years">6 - 10 years</option>
+                  <option value="10+ years">10+ years</option>
+                </select>
                 {errors.subject && (
                   <small className="text-danger">{errors.subject}</small>
                 )}
@@ -201,11 +201,11 @@ if (!formData.careerName.trim()) newErrors.careerName = "Position is required.";
             </div>
 
             <div className="mb-3">
-              <label className="form-label">About </label>
+              <label className="form-label">Remark </label>
               <textarea
                 name="message"
                 rows="4"
-                placeholder="Tell us about "
+                placeholder="Personal Note "
                 value={formData.message}
                 onChange={handleChange}
               ></textarea>
