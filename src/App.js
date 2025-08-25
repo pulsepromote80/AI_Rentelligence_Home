@@ -14,6 +14,7 @@ import Category from "./Component/Category/Category";
 import PrivacyPolicy from "./Component/PrivacyPolicy/PrivacyPolicy";
 import TermsCondition from "./Component/TermsAndCondition/TermsCondition";
 import RecentArticles from "./Component/Home/Articles";
+import Career from "./Component/Carrer/Career";
 
 function App() {
  
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsCondition" element={<TermsCondition />} />
           <Route path="/RecentArticles" element={<RecentArticles />} />
+          <Route path="/Career" element={<Career />} />
         </Routes>
         <Footer />
       </div>
