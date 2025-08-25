@@ -37,7 +37,10 @@ const Footer = () => {
 
         <div className="container">
           <div className="footer-top">
-            <div className="shadow-text text-lg-center text-white" data-aos="slide-up">
+            <div
+              className="shadow-text text-lg-center text-white opacity-50"
+              data-aos="slide-up"
+            >
               Let’s Talk
             </div>
             <div
@@ -152,6 +155,9 @@ const Footer = () => {
                         </li>
                         <li>
                           <a href="/service">Services</a>
+                        </li>
+                        <li>
+                          <a href="/Career">Careers</a>
                         </li>
                         <li>
                           <a href="/Category">Category</a>
