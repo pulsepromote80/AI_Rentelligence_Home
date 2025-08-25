@@ -18,3 +18,14 @@ code {
 
 
 
+.career-sub-heading b {
+    font-weight: bold;
+    color: #000;
+}
+
+.career-sub-heading {
+    font-size: 12px;
+}.career-heading {
+    font-size: 16px;
+    font-weight: bold;
+}
