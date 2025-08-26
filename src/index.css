@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -16,16 +16,334 @@ code {
   text-align: justify;
 }
 
-
-
 .career-sub-heading b {
-    font-weight: bold;
-    color: #000;
+  font-weight: bold;
+  color: #000;
 }
 
 .career-sub-heading {
-    font-size: 12px;
-}.career-heading {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 12px;
+}
+.career-heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+.career-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+}
+
+.career-license {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.career-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.career-desc {
+  font-size: 14px;
+  color: #000;
+  text-align: left;
+}
+
+.career-features li {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #444;
+  text-align: left;
+}
+
+.career-btn {
+  background: linear-gradient(90deg, #6d30fb, #4800ef);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.career-btn:hover {
+  opacity: 0.9;
+}
+.career-bg-img {
+  background-image: url("https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/hero6-1-scaled.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 100%;
+  position: relative;
+}
+.career-bg-img {
+  position: relative; /* required for pseudo elements */
+  z-index: 1;
+}
+
+/* Rotating shape */
+.career-bg-img::after {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  background-image: url(https://html.awaikenthemes.com/firevall/images/section-bg-shape-1.png);
+  content: "";
+  width: 170px;
+  height: 170px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  animation: rotateShape 25s linear infinite;
+  background-size: contain;
+}
+
+/* Floating up-down shape */
+.career-bg-img::before {
+  position: absolute;
+  top: 90%;
+  right: -78%;
+  background-image: url(https://html.awaikenthemes.com/firevall/images/section-bg-shape-3.png);
+  content: "";
+  width: 100%;
+  height: 35%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  animation: floatShape 6s ease-in-out infinite;
+  background-size: contain;
+}
+
+/* Rotation animation */
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating up-down animation */
+@keyframes floatShape {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.elementor-8 .elementor-element.elementor-element-0e2339b .tcgelements-button {
+  padding: 8px 20px 8px 20px;
+  display: inline-block;
+  font-family: "Manrope", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  color: #ffffff;
+  fill: #ffffff;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ffffff33;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.tcgelements-button-text {
+  font-family: "Space Grotesk";
+  margin-bottom: 8px;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #80808024;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+.attachment-full {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.heading-career-card {
+  font-family: "DM Sans";
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.sub-heading-career-card {
+  color: #e5e9f2;
+  font-family: "DM Sans";
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  text-align: justify;
+  word-spacing: -3px;
+  line-height: 1.6;
+}
+
+.tcgelements-button.btn-selector-type-button.btn-text-selector-type-button.tcgelements-responsive-break-line {
+  padding: 20px;
+  display: inline-block;
+  font-family: "Manrope", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  color: #ffffff;
+  fill: #ffffff;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #786e87;
+  border-radius: 34px 2px;
+  background: linear-gradient(90deg, rgb(1 1 12) 0%, rgb(51 41 85) 100%);
+  transition: all 0.3s ease 0s;
+  margin: 20px 0px;
+  height: 335px;
+}
+.tcgelements-button.btn-selector-type-button.btn-text-selector-type-button.tcgelements-responsive-break-line:hover {
+  background: linear-gradient(90deg, rgb(51 41 85) 0%, rgb(1 1 12) 100%);
+  transition: all 0.3s ease 0s;
+  border-radius: 2px 34px;
+}
+.heading-career-card span {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 25px;
+}
+.career-bg-img .container {
+  position: relative;
+  z-index: 1;
+}
+
+.new-bg-career {
+  padding: 80px 0px;
+  background: radial-gradient(circle at center, #7676ff00, #000000 80%);
+  position: relative;
+}
+.new-bg-career .container {
+  position: relative;
+  z-index: 1;
+}
+/* Shape 1: Rotate + Scale Pulse */
+.new-bg-career::after {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  background-image: url(https://html.awaikenthemes.com/firevall/images/section-bg-shape-2.png);
+  content: "";
+  width: 170px;
+  height: 170px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: contain;
+  animation: rotatePulse 20s linear infinite;
+}
+
+/* Shape 2: Floating Wave (Up-Down + Side Sway) */
+.new-bg-career::before {
+  position: absolute;
+  top: 85%;
+  right: -70%;
+  background-image: url(https://html.awaikenthemes.com/firevall/images/section-bg-shape-7.png);
+  content: "";
+  width: 100%;
+  height: 35%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: contain;
+  animation: floatWave 8s ease-in-out infinite;
+}
+
+/* Animation 1: Rotation + Pulse */
+@keyframes rotatePulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Animation 2: Floating Wave */
+@keyframes floatWave {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -15px);
+  }
+  50% {
+    transform: translate(0, -30px);
+  }
+  75% {
+    transform: translate(-10px, -15px);
+  }
+}
+
+.heading-career-section-2 {
+  font-weight: normal;
+  font-size: 22px;
+  font-family: "DM Sans";
+  margin-bottom: 5px;
+  margin-top: 15px;
+  display: block;
+  position: relative;
+}
+.sub-heading-career-section-2 ul {
+  margin: 0;
+  padding-left: 28px;
+  list-style: disc;
+}
+.sub-heading-career-section-2 ul li {
+  font-family: "Space Grotesk";
+  font-size: 15px;
+  padding: 5px 0px;
+}
+.new-card-design {
+  padding: 15px;
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #e9eaed;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.new-card-design:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .career-bg-img {
+    padding: 0;
+  }
+  .new-bg-career {
+    padding-top: 25;
+    padding-bottom: 25px;
+  }
 }
