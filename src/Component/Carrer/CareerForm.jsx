@@ -42,40 +42,38 @@ const CareerForm = () => {
     fetchCareerTypes();
   }, []);
 
-const disallowedCharactersRegex = /[!@#$%^&*(),.?":{}|<>]/g; // Regex for disallowed characters
+  const disallowedCharactersRegex = /[!@#$%^&*(),.?":{}|<>]/g; // Regex for disallowed characters
 
-// Sanitize input by removing or escaping special characters
-const sanitizeInput = (value) => {
-  if (typeof value !== 'string') return value;
-  // Remove potentially dangerous characters but keep basic formatting
-  return value.replace(/[<>"']/g, '');
-};
+  // Sanitize input by removing or escaping special characters
+  const sanitizeInput = (value) => {
+    if (typeof value !== "string") return value;
+    // Remove potentially dangerous characters but keep basic formatting
+    return value.replace(/[<>"']/g, "");
+  };
 
-// Normalize mobile number by removing non-digit characters except leading +
-const normalizeMobile = (mobile) => {
-  if (typeof mobile !== 'string') return '';
-  // Keep leading + and digits only
-  if (mobile.startsWith('+')) {
-    return '+' + mobile.slice(1).replace(/\D/g, '');
-  }
-  return mobile.replace(/\D/g, '');
-};
+  // Normalize mobile number by removing non-digit characters except leading +
+  const normalizeMobile = (mobile) => {
+    if (typeof mobile !== "string") return "";
+    // Keep leading + and digits only
+    if (mobile.startsWith("+")) {
+      return "+" + mobile.slice(1).replace(/\D/g, "");
+    }
+    return mobile.replace(/\D/g, "");
+  };
 
-const handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
 
     // Check for disallowed characters (exclude email field)
     if (name !== "email" && disallowedCharactersRegex.test(value)) {
-        setErrors((prev) => ({
-            ...prev,
-            [name]: "Special characters and quotes are not allowed.",
-        }));
-        return;
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "Special characters and quotes are not allowed.",
+      }));
+      return;
     }
 
-   
-
-     let sanitizedValue = sanitizeInput(value);
+    let sanitizedValue = sanitizeInput(value);
 
     if (name === "mobile") {
       sanitizedValue = sanitizedValue.replace(/(?!^\+)[^\d]/g, "");
@@ -83,7 +81,7 @@ const handleChange = (e) => {
       if (digitCount > 13) return;
     }
 
-     if (name === "message" && sanitizedValue.length > 300) return;
+    if (name === "message" && sanitizedValue.length > 300) return;
 
     setFormData((prev) => ({
       ...prev,
@@ -99,13 +97,12 @@ const handleChange = (e) => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-
     if (!formData.name.trim()) newErrors.name = "Name is required.";
     if (!formData.email.trim()) newErrors.email = "Email is required.";
     else if (!emailRegex.test(formData.email))
       newErrors.email = "Invalid email format.";
 
-     if (!formData.mobile.trim()) {
+    if (!formData.mobile.trim()) {
       newErrors.mobile = "Mobile number is required.";
     } else {
       const normalizedMobile = normalizeMobile(formData.mobile);
@@ -164,7 +161,9 @@ const handleChange = (e) => {
       );
 
       if (response.ok) {
-        toast.success("Great! Your application is on its way to our hiring team. If your skills align with the position, we’ll reach out to schedule the next steps.");
+        toast.success(
+          "Great! Your application is on its way to our hiring team. If your skills align with the position, we’ll reach out to schedule the next steps."
+        );
         setFormData({
           name: "",
           email: "",
@@ -316,156 +315,156 @@ const handleChange = (e) => {
 
       <div className="new-bg-career">
         <div className="container">
-          <div className="row"> 
-              <div class="col-xl-auto">
-                <h1
-                  class="sec-title text-anim2 text-gradient innovations-taxt aos-init aos-animate text-color-chng"
-                  data-aos="fade-left"
-                >
-                  Current Openings at Rentelligence
-                </h1>
+          <div className="row">
+            <div class="col-xl-auto">
+              <h1
+                class="sec-title text-anim2 text-gradient innovations-taxt aos-init aos-animate text-color-chng"
+                data-aos="fade-left"
+              >
+                Current Openings at Rentelligence
+              </h1>
+            </div>
+            <div className="row">
+              <div className="col-md-6 mt-3">
+                <div className="new-card-design">
+                  <img
+                    decoding="async"
+                    width="50"
+                    height="50"
+                    src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-1.svg"
+                    class="attachment-full size-full wp-image-36"
+                    alt=""
+                  ></img>
+                  <div className="heading-career-section-2">
+                    <span>1.</span> AI/ML Developer
+                  </div>
+                  <div className="sub-heading-career-section-2">
+                    <ul>
+                      <li>
+                        <b>Location : </b>
+                        Remote / Hybrid
+                      </li>
+                      <li>
+                        <b>Role Overview : </b>
+                        Design, develop, and optimize AI agents and machine
+                        learning models for automation and intelligent
+                        decision-making.
+                      </li>
+                      <li>
+                        <b>Requirements: </b>
+                        Strong knowledge of Python, TensorFlow, PyTorch
+                        Experience in AI/ML model deployment Problem-solving
+                        mindset and innovation-driven approach
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="row">
-                <div className="col-md-6 mt-3">
-                  <div className="new-card-design">
-                    <img
-                      decoding="async"
-                      width="50"
-                      height="50"
-                      src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-1.svg"
-                      class="attachment-full size-full wp-image-36"
-                      alt=""
-                    ></img>
-                    <div className="heading-career-section-2">
-                      <span>1.</span> AI/ML Developer
-                    </div>
-                    <div className="sub-heading-career-section-2">
-                      <ul>
-                        <li>
-                          <b>Location : </b>
-                          Remote / Hybrid
-                        </li>
-                        <li>
-                          <b>Role Overview : </b>
-                          Design, develop, and optimize AI agents and machine
-                          learning models for automation and intelligent
-                          decision-making.
-                        </li>
-                        <li>
-                          <b>Requirements: </b>
-                          Strong knowledge of Python, TensorFlow, PyTorch
-                          Experience in AI/ML model deployment Problem-solving
-                          mindset and innovation-driven approach
-                        </li>
-                      </ul>
-                    </div>
+              <div className="col-md-6 mt-3">
+                <div className="new-card-design">
+                  <img
+                    decoding="async"
+                    width="50"
+                    height="50"
+                    src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-2.svg"
+                    class="attachment-full size-full wp-image-36"
+                    alt=""
+                  ></img>
+                  <div className="heading-career-section-2">
+                    <span>1.</span> Blockchain Developer
+                  </div>
+                  <div className="sub-heading-career-section-2">
+                    <ul>
+                      <li>
+                        <b>Location : </b>
+                        Remote / Hybrid
+                      </li>
+                      <li>
+                        <b>Role Overview : </b>
+                        Build and maintain blockchain-based systems for agent
+                        ownership, leasing, and NFT integration.
+                      </li>
+                      <li>
+                        <b>Requirements: </b>
+                        Expertise in Solidity, smart contracts, and
+                        decentralized applications Knowledge of Web3 frameworks
+                        Understanding of NFTs and tokenomics
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div className="col-md-6 mt-3">
-                  <div className="new-card-design">
-                    <img
-                      decoding="async"
-                      width="50"
-                      height="50"
-                      src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-2.svg"
-                      class="attachment-full size-full wp-image-36"
-                      alt=""
-                    ></img>
-                    <div className="heading-career-section-2">
-                      <span>1.</span> Blockchain Developer
-                    </div>
-                    <div className="sub-heading-career-section-2">
-                      <ul>
-                        <li>
-                          <b>Location : </b>
-                          Remote / Hybrid
-                        </li>
-                        <li>
-                          <b>Role Overview : </b>
-                          Build and maintain blockchain-based systems for agent
-                          ownership, leasing, and NFT integration.
-                        </li>
-                        <li>
-                          <b>Requirements: </b>
-                          Expertise in Solidity, smart contracts, and
-                          decentralized applications Knowledge of Web3
-                          frameworks Understanding of NFTs and tokenomics
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              </div>
 
-                <div className="col-md-6 mt-3">
-                  <div className="new-card-design">
-                    <img
-                      decoding="async"
-                      width="50"
-                      height="50"
-                      src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-3.svg"
-                      class="attachment-full size-full wp-image-36"
-                      alt=""
-                    ></img>
-                    <div className="heading-career-section-2">
-                      <span>1.</span> Marketing & Growth Specialist
-                    </div>
-                    <div className="sub-heading-career-section-2">
-                      <ul>
-                        <li>
-                          <b>Location : </b>
-                          Remote
-                        </li>
-                        <li>
-                          <b>Role Overview : </b>
-                          Drive brand awareness and user acquisition for
-                          Rentelligence globally.
-                        </li>
-                        <li>
-                          <b>Requirements: </b>
-                          Digital marketing experience (SEO, PPC, social media)
-                          Strong communication and creative thinking Experience
-                          with tech or fintech products is a plus
-                        </li>
-                      </ul>
-                    </div>
+              <div className="col-md-6 mt-3">
+                <div className="new-card-design">
+                  <img
+                    decoding="async"
+                    width="50"
+                    height="50"
+                    src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-3.svg"
+                    class="attachment-full size-full wp-image-36"
+                    alt=""
+                  ></img>
+                  <div className="heading-career-section-2">
+                    <span>1.</span> Marketing & Growth Specialist
+                  </div>
+                  <div className="sub-heading-career-section-2">
+                    <ul>
+                      <li>
+                        <b>Location : </b>
+                        Remote
+                      </li>
+                      <li>
+                        <b>Role Overview : </b>
+                        Drive brand awareness and user acquisition for
+                        Rentelligence globally.
+                      </li>
+                      <li>
+                        <b>Requirements: </b>
+                        Digital marketing experience (SEO, PPC, social media)
+                        Strong communication and creative thinking Experience
+                        with tech or fintech products is a plus
+                      </li>
+                    </ul>
                   </div>
                 </div>
+              </div>
 
-                <div className="col-md-6 mt-3">
-                  <div className="new-card-design">
-                    <img
-                      decoding="async"
-                      width="50"
-                      height="50"
-                      src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-4.svg"
-                      class="attachment-full size-full wp-image-36"
-                      alt=""
-                    ></img>
-                    <div className="heading-career-section-2">
-                      <span>1.</span> Customer Success Executive
-                    </div>
-                    <div className="sub-heading-career-section-2">
-                      <ul>
-                        <li>
-                          <b>Location : </b>
-                          Remote{" "}
-                        </li>
-                        <li>
-                          <b>Role Overview : </b>
-                          Provide top-notch support and engagement to clients,
-                          ensuring a seamless AI leasing experience.
-                        </li>
-                        <li>
-                          <b>Requirements: </b>
-                          Excellent communication and problem-solving skills
-                          Ability to understand AI-driven solutions Prior
-                          experience in customer service
-                        </li>
-                      </ul>
-                    </div>
+              <div className="col-md-6 mt-3">
+                <div className="new-card-design">
+                  <img
+                    decoding="async"
+                    width="50"
+                    height="50"
+                    src="https://binos.themescamp.com/business-growth/wp-content/uploads/sites/7/2025/04/ser6-4.svg"
+                    class="attachment-full size-full wp-image-36"
+                    alt=""
+                  ></img>
+                  <div className="heading-career-section-2">
+                    <span>1.</span> Customer Success Executive
+                  </div>
+                  <div className="sub-heading-career-section-2">
+                    <ul>
+                      <li>
+                        <b>Location : </b>
+                        Remote{" "}
+                      </li>
+                      <li>
+                        <b>Role Overview : </b>
+                        Provide top-notch support and engagement to clients,
+                        ensuring a seamless AI leasing experience.
+                      </li>
+                      <li>
+                        <b>Requirements: </b>
+                        Excellent communication and problem-solving skills
+                        Ability to understand AI-driven solutions Prior
+                        experience in customer service
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div> 
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -473,18 +472,17 @@ const handleChange = (e) => {
       <div className=" mb-10 mt-10 ">
         <div className="new-bg-career new-img-after-and-before">
           <div className="card-body container shadow-lg rounded  bg-black p-3">
-             <div class="elementor-widget-container">
-                <h2
-                  class="sec-title text-anim2 text-gradient innovations-taxt aos-init aos-animate"
-                  data-aos="fade-up"
-                >
-              Apply for a Career
-                </h2>
-                 <p className="text-white">
-              Fill out the form below to apply for an open position.
-            </p>
-              </div> 
-           
+            <div class="elementor-widget-container">
+              <h2
+                class="sec-title text-anim2 text-gradient innovations-taxt aos-init aos-animate"
+                data-aos="fade-up"
+              >
+                Apply for a Career
+              </h2>
+              <p className="text-white">
+                Fill out the form below to apply for an open position.
+              </p>
+            </div>
 
             <form onSubmit={handleSubmit}>
               <div className="row mb-3">
@@ -522,13 +520,16 @@ const handleChange = (e) => {
                 <div className="col-md-6">
                   <label className="form-label text-white">Mobile</label>
                   <input
-                    type="tel"
+                    type="number"
                     name="mobile"
                     placeholder="Mobile No"
                     className="form-control"
                     value={formData.mobile}
                     onChange={handleChange}
+                    inputMode="numeric"
+                    pattern="[0-9]*"
                   />
+
                   {errors.mobile && (
                     <small className="text-danger">{errors.mobile}</small>
                   )}
@@ -590,14 +591,12 @@ const handleChange = (e) => {
                   <small className="text-danger">{errors.message}</small>
                 )}
               </div>
-<div className="header-button">
-  <button type="submit" className="th-btn style2">
-    Submit Application 
-    <i className="far fa-long-arrow-right ms-2"></i>
-  </button>
-</div>
-
- 
+              <div className="header-button">
+                <button type="submit" className="th-btn style2">
+                  Submit Application
+                  <i className="far fa-long-arrow-right ms-2"></i>
+                </button>
+              </div>
             </form>
           </div>
         </div>
