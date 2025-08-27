@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "../Image";
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 
 const GetInTouch = () => {
   useEffect(() => {
@@ -12,7 +12,7 @@ const GetInTouch = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    mobile: "", // changed here
     subject: "",
     message: "",
   });
@@ -20,34 +20,78 @@ const GetInTouch = () => {
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
 
+  const sanitizeInput = (input) => {
+    return input.replace(/[<>]/g, ""); // Remove angle brackets
+  };
+
+  const normalizeMobile = (mobile) => {
+    // Remove all non-digit characters except plus sign
+    return mobile.replace(/[^\d+]/g, "");
+  };
+
   const validate = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^[0-9]{7,15}$/;
 
     if (!formData.name.trim()) newErrors.name = "Name is required.";
+    else if (/['"<>]/.test(formData.name))
+      newErrors.name = "Invalid characters in name.";
+
     if (!formData.email.trim()) newErrors.email = "Email is required.";
     else if (!emailRegex.test(formData.email))
       newErrors.email = "Invalid email format.";
 
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
-    else if (!phoneRegex.test(formData.phone))
-      newErrors.phone = "Invalid phone number.";
+    if (!formData.mobile.trim()) {
+      newErrors.mobile = "Mobile number is required.";
+    } else {
+      const normalizedMobile = normalizeMobile(formData.mobile);
+      const digitsOnly = normalizedMobile.replace(/\D/g, "");
+      const digitCount = digitsOnly.length;
+
+      if (digitCount < 7) {
+        newErrors.mobile = "Mobile number must contain at least 7 digits.";
+      } else if (digitCount > 13) {
+        newErrors.mobile = "Mobile number cannot exceed 13 digits.";
+      } else if (/^(\d)\1{6,12}$/.test(digitsOnly)) {
+        newErrors.mobile = "Mobile number with repeated digits is not allowed.";
+      } else if (["123456", "123456789", "123123123"].includes(digitsOnly)) {
+        newErrors.mobile = "This mobile number is not allowed.";
+      }
+    }
 
     if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
+    else if (/['"<>]/.test(formData.subject))
+      newErrors.subject = "Invalid characters in subject.";
+
     if (!formData.message.trim()) {
       newErrors.message = "Message is required.";
-    } 
+    } else if (/['"<>]/.test(formData.message))
+      newErrors.message = "Invalid characters in message.";
+    else if (formData.message.length > 200) {
+      newErrors.message = "Message cannot exceed 200 characters.";
+    }
 
     return newErrors;
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    let sanitizedValue = sanitizeInput(value);
+
+    if (name === "mobile") {
+      sanitizedValue = sanitizedValue.replace(/(?!^\+)[^\d]/g, "");
+      const digitCount = sanitizedValue.replace(/\D/g, "").length;
+      if (digitCount > 13) return;
+    }
+
+    if (name === "message" && sanitizedValue.length > 300) return;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: sanitizedValue,
     }));
+
     setErrors((prev) => ({
       ...prev,
       [name]: "",
@@ -76,7 +120,7 @@ const GetInTouch = () => {
         }
       );
 
-     if(response.status === 200) {
+      if (response.status === 200) {
         toast.success("Query send successfully!");
       }
 
@@ -85,7 +129,7 @@ const GetInTouch = () => {
         setFormData({
           name: "",
           email: "",
-          phone: "",
+          mobile: "",
           subject: "",
           message: "",
         });
@@ -122,8 +166,8 @@ const GetInTouch = () => {
                     onSubmit={handleSubmit}
                   >
                     <div className="row">
-                      {["name", "email", "phone", "subject"].map(
-                        (field, index) => (
+                      {["name", "email", "mobile", "subject"].map(
+                        (field) => (
                           <div
                             className="form-group style-border col-md-6"
                             key={field}
@@ -132,8 +176,8 @@ const GetInTouch = () => {
                               type={
                                 field === "email"
                                   ? "email"
-                                  : field === "phone"
-                                  ? "number"
+                                  : field === "mobile"
+                                  ? "tel"
                                   : "text"
                               }
                               className="form-control"
@@ -156,7 +200,7 @@ const GetInTouch = () => {
                                   ? "user"
                                   : field === "email"
                                   ? "envelope"
-                                  : field === "phone"
+                                  : field === "mobile"
                                   ? "phone"
                                   : "circle-info"
                               }`}
@@ -169,13 +213,15 @@ const GetInTouch = () => {
                           name="message"
                           value={formData.message}
                           onChange={handleChange}
-                          placeholder="Type your Message"
+                          placeholder="Type your Message (max 300 characters)"
+                          maxLength={300}
                         ></textarea>
                         {errors.message && (
                           <small className="text-danger">
                             {errors.message}
                           </small>
                         )}
+                       
                       </div>
                       <div className="form-btn col-12 cursor-pointer">
                         <button className="th-btn style5" type="submit">

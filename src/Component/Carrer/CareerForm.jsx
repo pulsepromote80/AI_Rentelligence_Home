@@ -42,8 +42,49 @@ const CareerForm = () => {
     fetchCareerTypes();
   }, []);
 
-  const handleChange = (e) => {
+const disallowedCharactersRegex = /[!@#$%^&*(),.?":{}|<>]/g; // Regex for disallowed characters
+
+// Sanitize input by removing or escaping special characters
+const sanitizeInput = (value) => {
+  if (typeof value !== 'string') return value;
+  // Remove potentially dangerous characters but keep basic formatting
+  return value.replace(/[<>"']/g, '');
+};
+
+// Normalize mobile number by removing non-digit characters except leading +
+const normalizeMobile = (mobile) => {
+  if (typeof mobile !== 'string') return '';
+  // Keep leading + and digits only
+  if (mobile.startsWith('+')) {
+    return '+' + mobile.slice(1).replace(/\D/g, '');
+  }
+  return mobile.replace(/\D/g, '');
+};
+
+const handleChange = (e) => {
     const { name, value } = e.target;
+
+    // Check for disallowed characters (exclude email field)
+    if (name !== "email" && disallowedCharactersRegex.test(value)) {
+        setErrors((prev) => ({
+            ...prev,
+            [name]: "Special characters and quotes are not allowed.",
+        }));
+        return;
+    }
+
+   
+
+     let sanitizedValue = sanitizeInput(value);
+
+    if (name === "mobile") {
+      sanitizedValue = sanitizedValue.replace(/(?!^\+)[^\d]/g, "");
+      const digitCount = sanitizedValue.replace(/\D/g, "").length;
+      if (digitCount > 13) return;
+    }
+
+     if (name === "message" && sanitizedValue.length > 300) return;
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -57,23 +98,44 @@ const CareerForm = () => {
   const validate = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const mobileRegex = /^[0-9]{7,15}$/;
+
 
     if (!formData.name.trim()) newErrors.name = "Name is required.";
     if (!formData.email.trim()) newErrors.email = "Email is required.";
     else if (!emailRegex.test(formData.email))
       newErrors.email = "Invalid email format.";
 
-    if (!formData.mobile.trim())
+     if (!formData.mobile.trim()) {
       newErrors.mobile = "Mobile number is required.";
-    else if (!mobileRegex.test(formData.mobile))
-      newErrors.mobile = "Invalid Mobile number.";
+    } else {
+      const normalizedMobile = normalizeMobile(formData.mobile);
+      const digitsOnly = normalizedMobile.replace(/\D/g, "");
+      const digitCount = digitsOnly.length;
+
+      if (digitCount < 7) {
+        newErrors.mobile = "Mobile number must contain at least 7 digits.";
+      } else if (digitCount > 13) {
+        newErrors.mobile = "Mobile number cannot exceed 13 digits.";
+      } else if (/^(\d)\1{6,12}$/.test(digitsOnly)) {
+        newErrors.mobile = "Mobile number with repeated digits is not allowed.";
+      } else if (["123456", "123456789", "123123123"].includes(digitsOnly)) {
+        newErrors.mobile = "This mobile number is not allowed.";
+      }
+    }
 
     if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
     if (!formData.careerName.trim())
       newErrors.careerName = "Position is required.";
     if (!formData.message.trim()) {
       newErrors.message = "Message is required.";
+    }
+
+    // Check for special characters in text fields (exclude email)
+    if (disallowedCharactersRegex.test(formData.name)) {
+      newErrors.name = "Special characters and quotes are not allowed.";
+    }
+    if (disallowedCharactersRegex.test(formData.message)) {
+      newErrors.message = "Special characters and quotes are not allowed.";
     }
 
     return newErrors;
@@ -102,7 +164,7 @@ const CareerForm = () => {
       );
 
       if (response.ok) {
-        toast.success("Query Sended Successfully");
+        toast.success("Great! Your application is on its way to our hiring team. If your skills align with the position, we’ll reach out to schedule the next steps.");
         setFormData({
           name: "",
           email: "",
@@ -519,16 +581,22 @@ const CareerForm = () => {
                 <textarea
                   name="message"
                   rows="4"
-                  placeholder="Personal Note "
+                  placeholder="Personal Note (max 300 characters) "
                   value={formData.message}
                   onChange={handleChange}
+                  maxLength={300}
                 ></textarea>
                 {errors.message && (
                   <small className="text-danger">{errors.message}</small>
                 )}
               </div>
-<div class="header-button"><a href="#" class="th-btn style2">Submit Application 
-  <i class="far fa-long-arrow-right ms-2"></i></a></div>
+<div className="header-button">
+  <button type="submit" className="th-btn style2">
+    Submit Application 
+    <i className="far fa-long-arrow-right ms-2"></i>
+  </button>
+</div>
+
  
             </form>
           </div>
