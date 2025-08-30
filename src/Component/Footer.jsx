@@ -156,8 +156,8 @@ const Footer = () => {
                         <li>
                           <a href="/service">Services</a>
                         </li>
-                        <li>
-                          <a href="/Career">Careers</a>
+                         <li>
+                          <a href="/blog">Blog</a>
                         </li>
                         <li>
                           <a href="/Category">Category</a>
@@ -184,6 +184,9 @@ const Footer = () => {
                           >
                             Why Choose Us
                           </a>
+                        </li>
+                        <li>
+                          <a href="/Career">Careers</a>
                         </li>
                         <li>
                           <a
