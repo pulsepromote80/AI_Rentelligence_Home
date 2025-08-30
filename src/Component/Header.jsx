@@ -31,6 +31,7 @@ const Header = () => {
               <li><Link to="/main" onClick={closeMenu}>About Us</Link></li>
               <li><Link to="/service" onClick={closeMenu}>Services</Link></li>  
               <li><Link to="/Category" onClick={closeMenu}>Category</Link> </li>
+              <li><Link to="/blog" onClick={closeMenu}>Blog</Link> </li>
               <li><Link to="/Contact" onClick={closeMenu}>Contact Us</Link></li> 
             <li className="d-xl-block d-xl-none">
             <Link to="https://app.rentelligence.ai/" className="th-btn style2 text-white"> Log in <i className="far fa-long-arrow-right ms-2"></i></Link>
@@ -41,7 +42,7 @@ const Header = () => {
       </div>
 
       {/* Header */}
-      <header className="th-header header-layout1 onepage-nav" >
+      <header className="th-header header-layout1 onepage-nav " >
         <div className="sticky-wrapper">
           <div className="menu-area">
             <div className="container">
@@ -62,6 +63,7 @@ const Header = () => {
                       <li><Link to="/main">About Us</Link> </li> 
                       <li><Link to="/service">Services</Link></li> 
                       <li><Link to="/Category">Category</Link> </li>
+                      <li><Link to="/blog" onClick={closeMenu}>Blog</Link> </li>
                       <li><Link to="/Contact">Contact Us</Link> </li> 
                     </ul>
                   </nav>
