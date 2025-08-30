@@ -31,7 +31,7 @@ const Header = () => {
               <li><Link to="/main" onClick={closeMenu}>About Us</Link></li>
               <li><Link to="/service" onClick={closeMenu}>Services</Link></li>  
               <li><Link to="/Category" onClick={closeMenu}>Category</Link> </li>
-              <li><Link to="/blog" onClick={closeMenu}>Blog</Link> </li>
+              <li><a to="/blog" onClick={closeMenu}>Blog</a> </li>
               <li><Link to="/Contact" onClick={closeMenu}>Contact Us</Link></li> 
             <li className="d-xl-block d-xl-none">
             <Link to="https://app.rentelligence.ai/" className="th-btn style2 text-white"> Log in <i className="far fa-long-arrow-right ms-2"></i></Link>
