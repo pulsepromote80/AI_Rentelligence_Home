@@ -28,7 +28,7 @@ const Header = () => {
           <div className="th-mobile-menu">
             <ul>
               <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-              <li><Link to="/aboutUs" onClick={closeMenu}>About Us</Link></li>
+              <li><Link to="/about-us" onClick={closeMenu}>About Us</Link></li>
               <li><Link to="/service" onClick={closeMenu}>Services</Link></li>  
               <li><Link to="/category" onClick={closeMenu}>Category</Link> </li>
               <li><a href="/blog" onClick={closeMenu}>Blog</a> </li>
@@ -60,7 +60,7 @@ const Header = () => {
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
                       <li><Link to="/">Home</Link> </li>
-                      <li><Link to="/aboutUs">About Us</Link> </li> 
+                      <li><Link to="/about-us">About Us</Link> </li> 
                       <li><Link to="/service">Services</Link></li> 
                       <li><Link to="/category">Category</Link> </li>
                       <li><a  href="/blog" onClick={closeMenu}>Blog</a> </li>

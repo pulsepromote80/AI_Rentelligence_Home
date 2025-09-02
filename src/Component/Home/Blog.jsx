@@ -1,8 +1,13 @@
 import Image from "../../Component/Image";
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
   return (
     <>
+      <Helmet>
+        <title>Rentelligence Blog – Insights on AI, Agents, and Decentralized Innovation</title>
+        <meta name="description" content="Stay updated with Rentelligence: expert insights on AI agents, decentralized marketplaces, blockchain, and the future of intelligent automation." />
+      </Helmet>
       <section className="overflow-hidden space" id="blog-sec">
       <div className="blog-wrap2 space bg-gray">
         <div className="container">

@@ -24,7 +24,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Wapper />} />
-          <Route path="/aboutUs" element={<Main />} />
+          <Route path="/about-us" element={<Main />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
           <Route path="/category" element={<Category />} />

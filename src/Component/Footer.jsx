@@ -151,7 +151,7 @@ const Footer = () => {
                           <a href="/">Home</a>
                         </li>
                         <li>
-                          <a href="/main">About Us</a>
+                          <a href="/about-us">About Us</a>
                         </li>
                         <li>
                           <a href="/service">Services</a>
@@ -160,10 +160,10 @@ const Footer = () => {
                           <a href="/blog">Blog</a>
                         </li>
                         <li>
-                          <a href="/Category">Category</a>
+                          <a href="/category">Category</a>
                         </li>
                         <li>
-                          <a href="/Contact">Contact Us</a>
+                          <a href="/contact">Contact Us</a>
                         </li>
                       </ul>
                     </div>
