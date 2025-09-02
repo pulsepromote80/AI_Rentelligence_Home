@@ -24,10 +24,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Wapper />} />
-          <Route path="/main" element={<Main />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/aboutUs" element={<Main />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/Category" element={<Category />} />
+          <Route path="/category" element={<Category />} />
           <Route path="/Privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/TermsCondition" element={<TermsCondition />} />
           <Route path="/RecentArticles" element={<RecentArticles />} />
