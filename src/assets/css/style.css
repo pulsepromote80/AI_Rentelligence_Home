@@ -9933,6 +9933,7 @@ html, body {
 
  .header-logo {
     padding: 0px;
+    margin-bottom: 16px;
  }
 
  .header-logo a img {
@@ -10356,7 +10357,7 @@ html, body {
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 10px 2px rgba(102, 102, 102, 0.25);
      -webkit-backdrop-filter: blur(5px);
      backdrop-filter: blur(5px);
-     padding: 0 30px
+     padding: 0 25px
  }
 
  .header-layout1 .main-menu ul.mega-menu {
