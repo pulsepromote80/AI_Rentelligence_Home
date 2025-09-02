@@ -20,11 +20,13 @@ import "swiper/css/autoplay";
 import { useEffect, useRef, useState } from "react";
 import { serviceData } from "../../constants/constant";
 import RecentArticles from "./Articles";
+import { Helmet } from 'react-helmet';
 
 const Sectionfive = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
+    
     <section className="overflow-hidden space-bottom" id="service-sec">
       <div className="service-wrap2 bg-gray space">
         <div className="container">
@@ -222,6 +224,10 @@ const Wapper = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Rentelligence – Decentralized AI Agent Marketplace</title>
+        <meta name="description" content="Discover Rentelligence - the world’s first decentralized AI/ML marketplace to rent, lease, or own intelligent agents tailored to your business needs." />
+      </Helmet>
       <div id="hero" className="th-hero-wrapper hero-2">
         <div
           className="th-hero-bg hero-bg"

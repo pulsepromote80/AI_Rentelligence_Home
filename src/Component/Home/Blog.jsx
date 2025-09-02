@@ -3,6 +3,7 @@ import Image from "../../Component/Image";
 const Blog = () => {
   return (
     <>
+      
       <section className="overflow-hidden space" id="blog-sec">
       <div className="blog-wrap2 space bg-gray">
         <div className="container">
