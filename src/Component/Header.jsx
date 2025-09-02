@@ -28,11 +28,11 @@ const Header = () => {
           <div className="th-mobile-menu">
             <ul>
               <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-              <li><Link to="/main" onClick={closeMenu}>About Us</Link></li>
+              <li><Link to="/aboutUs" onClick={closeMenu}>About Us</Link></li>
               <li><Link to="/service" onClick={closeMenu}>Services</Link></li>  
-              <li><Link to="/Category" onClick={closeMenu}>Category</Link> </li>
+              <li><Link to="/category" onClick={closeMenu}>Category</Link> </li>
               <li><a href="/blog" onClick={closeMenu}>Blog</a> </li>
-              <li><Link to="/Contact" onClick={closeMenu}>Contact Us</Link></li> 
+              <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li> 
             <li className="d-xl-block d-xl-none">
             <Link to="https://app.rentelligence.ai/" className="th-btn style2 text-white"> Log in <i className="far fa-long-arrow-right ms-2"></i></Link>
              </li>
@@ -60,11 +60,11 @@ const Header = () => {
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
                       <li><Link to="/">Home</Link> </li>
-                      <li><Link to="/main">About Us</Link> </li> 
+                      <li><Link to="/aboutUs">About Us</Link> </li> 
                       <li><Link to="/service">Services</Link></li> 
-                      <li><Link to="/Category">Category</Link> </li>
+                      <li><Link to="/category">Category</Link> </li>
                       <li><a  href="/blog" onClick={closeMenu}>Blog</a> </li>
-                      <li><Link to="/Contact">Contact Us</Link> </li> 
+                      <li><Link to="/contact">Contact Us</Link> </li> 
                     </ul>
                   </nav>
 
